@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "www.cvent.com/**/*",
+      "src": "**/*",
       "use": "@vercel/static"
     }
   ],
-  "rewrites": [
+  "routes": [
     {
-      "source": "/(.*)",
-      "destination": "/www.cvent.com/$1"
+      "src": "/(.*)",
+      "dest": "/$1"
     }
   ],
   "headers": [
