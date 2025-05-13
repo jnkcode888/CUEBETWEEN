@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard | CueBetween</title>
+    <link rel="stylesheet" href="/themes/custom/themekit/css/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="/sites/default/files/css/css_6_4rMV5fph69jK4iupDsynGSDzWe01mrBtXSLtXu2I8.css"
+    />
+    <style>
+      /* Responsive admin layout */
+      .admin-container {
+        display: flex;
+        min-height: 100vh;
+        background: linear-gradient(120deg, #f6fafd 0%, #e9f1fa 100%);
+      }
+      .admin-sidebar {
+        width: 260px;
+        background: #fff;
+        border-right: 1px solid #e5e7eb;
+        padding: 32px 16px 16px 16px;
+        box-shadow: 2px 0 8px rgba(0, 0, 0, 0.03);
+        transition: all 0.3s;
+      }
+      .admin-main {
+        flex: 1;
+        padding: 40px 5vw 40px 5vw;
+        min-width: 0;
+      }
+      .admin-card {
+        background: #fff;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+        margin-bottom: 32px;
+        padding: 32px 24px;
+        max-width: 100%;
+        overflow-x: auto;
+      }
+      .admin-sidebar nav a {
+        display: block;
+        padding: 12px 16px;
+        color: #1a202c;
+        text-decoration: none;
+        border-radius: 6px;
+        margin-bottom: 8px;
+        font-weight: 500;
+        transition: background 0.2s;
+      }
+      .admin-sidebar nav a.active,
+      .admin-sidebar nav a:hover {
+        background: #e9f1fa;
+        color: #0a58ca;
+      }
+      @media (max-width: 900px) {
+        .admin-main {
+          padding: 32px 2vw 32px 2vw;
+        }
+        .admin-sidebar {
+          width: 180px;
+          padding: 20px 8px 8px 8px;
+        }
+      }
+      @media (max-width: 700px) {
+        .admin-container {
+          flex-direction: column;
+        }
+        .admin-sidebar {
+          width: 100%;
+          border-right: none;
+          border-bottom: 1px solid #e5e7eb;
+          box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+          display: flex;
+          flex-direction: row;
+          padding: 0;
+          overflow-x: auto;
+        }
+        .admin-sidebar nav {
+          display: flex;
+          flex-direction: row;
+          width: 100%;
+        }
+        .admin-sidebar nav a {
+          flex: 1 1 0;
+          margin: 0;
+          padding: 14px 0;
+          text-align: center;
+          border-radius: 0;
+          border-right: 1px solid #e5e7eb;
+        }
+        .admin-sidebar nav a:last-child {
+          border-right: none;
+        }
+      }
+      @media (max-width: 500px) {
+        .admin-main {
+          padding: 16px 2vw 16px 2vw;
+        }
+        .admin-card {
+          padding: 16px 6px;
+        }
+      }
+      /* Responsive tables */
+      .admin-card table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 0.98rem;
+      }
+      .admin-card th,
+      .admin-card td {
+        padding: 8px 6px;
+        border-bottom: 1px solid #e5e7eb;
+        text-align: left;
+      }
+      .admin-card th {
+        background: #f6fafd;
+        font-weight: 600;
+      }
+      .admin-card tr:last-child td {
+        border-bottom: none;
+      }
+      @media (max-width: 700px) {
+        .admin-card table,
+        .admin-card thead,
+        .admin-card tbody,
+        .admin-card th,
+        .admin-card td,
+        .admin-card tr {
+          display: block;
+        }
+        .admin-card thead {
+          display: none;
+        }
+        .admin-card tr {
+          margin-bottom: 16px;
+          border-radius: 8px;
+          box-shadow: 0 1px 4px rgba(0, 0, 0, 0.03);
+          background: #fff;
+        }
+        .admin-card td {
+          padding: 10px 12px;
+          border: none;
+          position: relative;
+        }
+        .admin-card td:before {
+          content: attr(data-label);
+          font-weight: 600;
+          color: #0a58ca;
+          display: block;
+          margin-bottom: 4px;
+        }
+      }
+      /* Responsive form fields */
+      .admin-card input,
+      .admin-card select,
+      .admin-card textarea,
+      .admin-card button {
+        width: 100%;
+        max-width: 100%;
+        margin-bottom: 12px;
+        padding: 10px 12px;
+        border-radius: 6px;
+        border: 1px solid #e5e7eb;
+        font-size: 1rem;
+        box-sizing: border-box;
+      }
+      .admin-card button {
+        background: #0a58ca;
+        color: #fff;
+        border: none;
+        font-weight: 600;
+        cursor: pointer;
+        transition: background 0.2s;
+      }
+      .admin-card button:hover {
+        background: #084298;
+      }
+    </style>
+  </head>
+  <body
+    style="
+      background: linear-gradient(120deg, #f6fafd 0%, #e9f1fa 100%);
+      min-height: 100vh;
+    "
+  >
+    <!-- Header/Navbar copied from index.html for consistency -->
+    <header role="banner">
+      <div class="region region-header-top">
+        <div class="wrapper">
+          <div
+            id="block-themekit-branding"
+            class="block block-system block-system-branding-block"
+          >
+            <a
+              href="/"
+              rel="home"
+              class="site-logo"
+              aria-label="CueBetween home"
+            >
+              <div
+                style="
+                  height: 60px;
+                  width: auto;
+                  overflow: hidden;
+                  display: inline-block;
+                "
+              >
+                <img
+                  src="/themes/custom/themekit/images/Cue.png"
+                  alt="CueBetween Logo"
+                  style="
+                    height: 190px;
+                    width: auto;
+                    margin-top: -60px;
+                    display: block;
+                  "
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="admin-container">
+      <aside class="admin-sidebar">
+        <nav>
+          <a href="#inquiries" class="active">Inquiries</a>
+          <a href="#services">Services</a>
+          <a href="#case-studies">Case Studies</a>
+          <a href="#testimonials">Testimonials</a>
+          <a href="#users">Users</a>
+        </nav>
+      </aside>
+      <main class="admin-main">
+        <!-- Example admin cards/sections -->
+        <section id="inquiries" class="admin-card">
+          <h2>Inquiries</h2>
+          <div id="admin-inquiries-list"></div>
+        </section>
+        <section id="services" class="admin-card">
+          <h2>Services</h2>
+          <form
+            id="service-form"
+            style="
+              margin-bottom: 24px;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 16px;
+              align-items: flex-end;
+            "
+          >
+            <input
+              type="text"
+              id="service-title"
+              placeholder="Title"
+              required
+              style="flex: 1"
+            />
+            <input
+              type="text"
+              id="service-category"
+              placeholder="Category"
+              required
+              style="flex: 1"
+            />
+            <input
+              type="number"
+              id="service-base-price"
+              placeholder="Base Price"
+              required
+              style="width: 120px"
+            />
+            <input
+              type="text"
+              id="service-description"
+              placeholder="Description"
+              required
+              style="flex: 2"
+            />
+            <button type="submit">Add Service</button>
+          </form>
+          <div id="services-list"></div>
+        </section>
+        <section id="case-studies" class="admin-card">
+          <h2>Case Studies</h2>
+          <form
+            id="case-study-form"
+            style="
+              margin-bottom: 24px;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 16px;
+              align-items: flex-end;
+            "
+          >
+            <input
+              type="text"
+              id="cs-title"
+              placeholder="Title"
+              required
+              style="flex: 1"
+            />
+            <input
+              type="text"
+              id="cs-client-name"
+              placeholder="Client Name"
+              required
+              style="flex: 1"
+            />
+            <input
+              type="text"
+              id="cs-results"
+              placeholder="Results"
+              required
+              style="flex: 1"
+            />
+            <input
+              type="text"
+              id="cs-description"
+              placeholder="Description"
+              required
+              style="flex: 2"
+            />
+            <input
+              type="file"
+              id="cs-image"
+              accept="image/*"
+              style="width: 180px"
+            />
+            <button type="submit">Add Case Study</button>
+          </form>
+          <div id="case-studies-list"></div>
+        </section>
+        <section id="testimonials" class="admin-card">
+          <h2>Testimonials</h2>
+          <form
+            id="testimonial-form"
+            style="
+              margin-bottom: 24px;
+              display: flex;
+              flex-wrap: wrap;
+              gap: 16px;
+              align-items: flex-end;
+            "
+          >
+            <input
+              type="text"
+              id="testimonial-client-name"
+              placeholder="Client Name"
+              required
+              style="flex: 1"
+            />
+            <input
+              type="text"
+              id="testimonial-text"
+              placeholder="Testimonial"
+              required
+              style="flex: 2"
+            />
+            <input
+              type="file"
+              id="testimonial-image"
+              accept="image/*"
+              style="width: 180px"
+            />
+            <button type="submit">Add Testimonial</button>
+          </form>
+          <div id="testimonials-list"></div>
+        </section>
+        <section id="users" class="admin-card">
+          <h2>Users</h2>
+          <div id="users-list"></div>
+        </section>
+      </main>
+    </div>
+    <script type="module">
+      import { supabase, uploadCaseStudyImage } from "./config/supabase.js";
+      // Restrict access to admins only
+      (async () => {
+        const {
+          data: { user },
+        } = await supabase.auth.getUser();
+        if (!user) window.location.href = "/login.html";
+        const { data: profile } = await supabase
+          .from("profiles")
+          .select("*")
+          .eq("id", user.id)
+          .single();
+        if (!profile || profile.role !== "admin")
+          window.location.href = "/login.html";
+      })();
+      // Tab navigation
+      const tabBtns = document.querySelectorAll(".admin-tab-btn");
+      const tabSections = document.querySelectorAll(".admin-tab-section");
+      tabBtns.forEach(
+        (btn) =>
+          (btn.onclick = () => {
+            tabBtns.forEach(
+              (b) =>
+                (b.style.color =
+                  b.dataset.tab === btn.dataset.tab ? "#0098e3" : "#222")
+            );
+            tabSections.forEach(
+              (sec) =>
+                (sec.style.display =
+                  sec.id === "tab-" + btn.dataset.tab ? "block" : "none")
+            );
+          })
+      );
+      // --- Inquiries ---
+      async function loadInquiries() {
+        const { data } = await supabase
+          .from("contact_messages")
+          .select("*")
+          .order("created_at", { ascending: false });
+        const el = document.getElementById("admin-inquiries-list");
+        if (!data || data.length === 0) {
+          el.innerHTML = '<p style="color:#888;">No inquiries yet.</p>';
+          return;
+        }
+        el.innerHTML = data
+          .map(
+            (msg) => `
+          <div style="border:1.5px solid #e0e6ed;padding:14px 16px;margin-bottom:12px;border-radius:8px;background:#f8fafc;">
+            <div style="font-weight:600;color:#222;">${msg.subject}</div>
+            <div style="margin:6px 0 8px 0;color:#444;">${msg.message}</div>
+            <div style="font-size:12px;color:#888;">${msg.name} &lt;${
+              msg.email
+            }&gt; • ${new Date(msg.created_at).toLocaleString()}</div>
+          </div>
+        `
+          )
+          .join("");
+      }
+      // --- Services CRUD ---
+      async function loadServices() {
+        const { data } = await supabase
+          .from("services")
+          .select("*")
+          .order("created_at", { ascending: false });
+        const el = document.getElementById("services-list");
+        if (!data || data.length === 0) {
+          el.innerHTML = '<p style="color:#888;">No services yet.</p>';
+          return;
+        }
+        el.innerHTML = data
+          .map(
+            (s) => `
+          <div style="border:1.5px solid #e0e6ed;padding:14px 16px;margin-bottom:12px;border-radius:8px;background:#f8fafc;display:flex;align-items:center;gap:16px;">
+            <div style="flex:2;">
+              <div style="font-weight:600;color:#222;">${s.title}</div>
+              <div style="color:#0098e3;font-size:0.98rem;">${s.category}</div>
+              <div style="color:#444;margin:6px 0 8px 0;">${s.description}</div>
+              <div style="font-size:13px;color:#888;">Base Price: $${s.base_price}</div>
+            </div>
+            <button onclick="deleteService('${s.id}')" style="background:#c00;color:#fff;border:none;padding:8px 14px;border-radius:6px;font-weight:600;cursor:pointer;">Delete</button>
+          </div>
+        `
+          )
+          .join("");
+      }
+      window.deleteService = async (id) => {
+        await supabase.from("services").delete().eq("id", id);
+        loadServices();
+      };
+      document.getElementById("service-form").onsubmit = async (e) => {
+        e.preventDefault();
+        const title = document.getElementById("service-title").value;
+        const category = document.getElementById("service-category").value;
+        const base_price = document.getElementById("service-base-price").value;
+        const description = document.getElementById(
+          "service-description"
+        ).value;
+        await supabase
+          .from("services")
+          .insert([{ title, category, base_price, description }]);
+        e.target.reset();
+        loadServices();
+      };
+      // --- Case Studies CRUD ---
+      async function loadCaseStudies() {
+        const { data } = await supabase
+          .from("case_studies")
+          .select("*")
+          .order("created_at", { ascending: false });
+        const el = document.getElementById("case-studies-list");
+        if (!data || data.length === 0) {
+          el.innerHTML = '<p style="color:#888;">No case studies yet.</p>';
+          return;
+        }
+        el.innerHTML = data
+          .map(
+            (cs) => `
+          <div style="border:1.5px solid #e0e6ed;padding:14px 16px;margin-bottom:12px;border-radius:8px;background:#f8fafc;display:flex;align-items:center;gap:16px;">
+            <img src="${
+              cs.image_url || ""
+            }" alt="Case Study Image" style="height:60px;width:60px;object-fit:cover;border-radius:8px;background:#eee;" />
+            <div style="flex:2;">
+              <div style="font-weight:600;color:#222;">${cs.title}</div>
+              <div style="color:#0098e3;font-size:0.98rem;">${
+                cs.client_name
+              }</div>
+              <div style="color:#444;margin:6px 0 8px 0;">${
+                cs.description
+              }</div>
+              <div style="font-size:13px;color:#888;">Results: ${
+                cs.results
+              }</div>
+            </div>
+            <button onclick="deleteCaseStudy('${
+              cs.id
+            }')" style="background:#c00;color:#fff;border:none;padding:8px 14px;border-radius:6px;font-weight:600;cursor:pointer;">Delete</button>
+          </div>
+        `
+          )
+          .join("");
+      }
+      window.deleteCaseStudy = async (id) => {
+        await supabase.from("case_studies").delete().eq("id", id);
+        loadCaseStudies();
+      };
+      document.getElementById("case-study-form").onsubmit = async (e) => {
+        e.preventDefault();
+        const title = document.getElementById("cs-title").value;
+        const client_name = document.getElementById("cs-client-name").value;
+        const results = document.getElementById("cs-results").value;
+        const description = document.getElementById("cs-description").value;
+        const file = document.getElementById("cs-image").files[0];
+        let image_url = "";
+        if (file) image_url = await uploadCaseStudyImage(file);
+        await supabase
+          .from("case_studies")
+          .insert([{ title, client_name, results, description, image_url }]);
+        e.target.reset();
+        loadCaseStudies();
+      };
+      // --- Testimonials CRUD ---
+      async function loadTestimonials() {
+        const { data } = await supabase
+          .from("testimonials")
+          .select("*")
+          .order("created_at", { ascending: false });
+        const el = document.getElementById("testimonials-list");
+        if (!data || data.length === 0) {
+          el.innerHTML = '<p style="color:#888;">No testimonials yet.</p>';
+          return;
+        }
+        el.innerHTML = data
+          .map(
+            (t) => `
+          <div style="border:1.5px solid #e0e6ed;padding:14px 16px;margin-bottom:12px;border-radius:8px;background:#f8fafc;display:flex;align-items:center;gap:16px;">
+            <img src="${
+              t.image_url || ""
+            }" alt="Testimonial Image" style="height:60px;width:60px;object-fit:cover;border-radius:8px;background:#eee;" />
+            <div style="flex:2;">
+              <div style="font-weight:600;color:#222;">${t.client_name}</div>
+              <div style="color:#444;margin:6px 0 8px 0;">${t.testimonial}</div>
+            </div>
+            <button onclick="deleteTestimonial('${
+              t.id
+            }')" style="background:#c00;color:#fff;border:none;padding:8px 14px;border-radius:6px;font-weight:600;cursor:pointer;">Delete</button>
+          </div>
+        `
+          )
+          .join("");
+      }
+      window.deleteTestimonial = async (id) => {
+        await supabase.from("testimonials").delete().eq("id", id);
+        loadTestimonials();
+      };
+      document.getElementById("testimonial-form").onsubmit = async (e) => {
+        e.preventDefault();
+        const client_name = document.getElementById(
+          "testimonial-client-name"
+        ).value;
+        const testimonial = document.getElementById("testimonial-text").value;
+        const file = document.getElementById("testimonial-image").files[0];
+        let image_url = "";
+        if (file) image_url = await uploadCaseStudyImage(file);
+        await supabase
+          .from("testimonials")
+          .insert([{ client_name, testimonial, image_url }]);
+        e.target.reset();
+        loadTestimonials();
+      };
+      // --- Users Management ---
+      async function loadUsers() {
+        const { data } = await supabase
+          .from("profiles")
+          .select("*")
+          .order("created_at", { ascending: false });
+        const el = document.getElementById("users-list");
+        if (!data || data.length === 0) {
+          el.innerHTML = '<p style="color:#888;">No users yet.</p>';
+          return;
+        }
+        el.innerHTML = data
+          .map(
+            (u) => `
+          <div style="border:1.5px solid #e0e6ed;padding:14px 16px;margin-bottom:12px;border-radius:8px;background:#f8fafc;display:flex;align-items:center;gap:16px;">
+            <div style="flex:2;">
+              <div style="font-weight:600;color:#222;">${
+                u.name || u.email
+              }</div>
+              <div style="color:#0098e3;font-size:0.98rem;">${u.email}</div>
+              <div style="color:#444;margin:6px 0 8px 0;">Role: <select onchange="updateUserRole('${
+                u.id
+              }', this.value)" style='padding:4px 8px;border-radius:5px;'>
+                <option value="client" ${
+                  u.role === "client" ? "selected" : ""
+                }>Client</option>
+                <option value="admin" ${
+                  u.role === "admin" ? "selected" : ""
+                }>Admin</option>
+              </select></div>
+              <div style="font-size:13px;color:#888;">Joined: ${new Date(
+                u.created_at
+              ).toLocaleString()}</div>
+            </div>
+          </div>
+        `
+          )
+          .join("");
+      }
+      window.updateUserRole = async (id, role) => {
+        await supabase.from("profiles").update({ role }).eq("id", id);
+        loadUsers();
+      };
+      // Initial load
+      loadInquiries();
+      loadServices();
+      loadCaseStudies();
+      loadTestimonials();
+      loadUsers();
+    </script>
+  </body>
+</html>

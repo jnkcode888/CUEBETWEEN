@@ -1,0 +1,2447 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# ">
+  <head>
+    <!-- OneTrust Cookies Consent Notice start for cvent.com -->
+<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="d44b0ebd-473b-439a-9f06-dd272691519a" ></script>
+<script type="text/javascript">
+  function OptanonWrapper() { }
+</script>
+<script type="text/plain" class="optanon-category-C0004" src="https://g.3gl.net/jp/12733/latest/InitialLoadScript.js" defer></script>
+<script>
+  (function(h,o,u,n,d) {
+    h=h[d]=h[d]||{q:[],onReady:function(c){h.q.push(c)}}
+    d=o.createElement(u);d.async=1;d.src=n
+    n=o.getElementsByTagName(u)[0];n.parentNode.insertBefore(d,n)
+  })(window,document,'script','https://www.datadoghq-browser-agent.com/us1/v5/datadog-rum.js','DD_RUM')
+  window.DD_RUM.onReady(function() {
+    window.DD_RUM.init({
+      clientToken: 'pub86f60f882e277e88358258b5d5667216',
+      applicationId: 'e0fda234-1133-4512-90a1-0ea30a08a137',
+      site: 'datadoghq.com',
+      service: 'marketing-website-prod',
+      env: 'prod',
+      sessionSampleRate: 15,
+      sessionReplaySampleRate: 25,
+      trackUserInteractions: true,
+      trackResources: true,
+      trackLongTasks: true,
+      defaultPrivacyLevel: 'mask-user-input',
+      class: 'optanon-category-C0002-C0004',
+    });
+  });
+</script>
+<script id="6senseWebTag" type="text/plain" class="optanon-category-C0004" src="https://j.6sc.co/j/6a7d019d-0b45-4f05-a732-7aeb64c6255d.js"></script>
+<!-- OneTrust Cookies Consent Notice end for cvent.com -->
+  <!-- Adobe DTM Tag Manager -->
+  <script src="//assets.adobedtm.com/f7740e1036fc/4cf0f823d8af/launch-625595ac1b15.min.js" defer></script>
+  <!-- End Adobe DTM Tag Manager -->
+<!---adding munchkin js-->
+
+<script type="text/plain" class="optanon-category-C0004">
+  (function() {
+    var didInit = false;
+    function initMunchkin() {
+      if(didInit === false) {
+        didInit = true;
+        Munchkin.init("006-LRT-285");
+      }
+    }
+    var s = document.createElement("script");
+    s.type = "text/javascript";
+    s.async = true;
+    s.src = '//munchkin.marketo.net/munchkin.js';
+    s.onreadystatechange = function() {
+      if (this.readyState == 'complete' || this.readyState == 'loaded') {
+        initMunchkin();
+      }
+    };
+    s.onload = initMunchkin;
+    document.getElementsByTagName('head')[0].appendChild(s);
+  })();
+  
+</script> 
+
+<!---adding RTP js-->
+<script type="text/plain" class="optanon-category-C0004">
+  /* Marketo RTP Code for Cvent.com [Chandan 15/03/2018] */
+  (function (c, h, a, f, i, e) {
+    c[a] = c[a] || function () {
+      (c[a].q = c[a].q || []).push(arguments)
+    };
+    c[a].a = i;
+    c[a].e = e;
+    var g = h.createElement("script");
+    g.async = true;
+    g.type = "text/javascript";
+    g.src = f + '?aid=' + i;
+    var b = h.getElementsByTagName("script")[0];
+    b.parentNode.insertBefore(g, b);
+  })(window, document, "rtp", "//sjrtp-cdn.marketo.com/rtp-api/v1/rtp.js", "cvent");
+  
+  rtp('send', 'view');
+  rtp('get', 'campaign', true);
+  
+</script>
+<!--ending adding here-->
+
+    <!--adding rudderscript -->
+    <script type="text/plain" class="optanon-category-C0004">
+      !function(){"use strict";window.RudderSnippetVersion="3.0.10";var e="rudderanalytics";window[e]||(window[e]=[])
+      ;var t=window[e];if(Array.isArray(t)){if(true===t.snippetExecuted&&window.console&&console.error){
+      console.error("RudderStack JavaScript SDK snippet included more than once.")}else{t.snippetExecuted=true,
+      window.rudderAnalyticsBuildType="legacy";var sdkBaseUrl="https://cdn.rudderlabs.com/v3";var sdkName="rsa.min.js"
+      ;var r="async"
+      ;var n=["setDefaultInstanceKey","load","ready","page","track","identify","alias","group","reset","setAnonymousId","startSession","endSession","consent"]
+      ;for(var i=0;i<n.length;i++){var d=n[i];t[d]=function(r){return function(){var n
+      ;Array.isArray(window[e])?t.push([r].concat(Array.prototype.slice.call(arguments))):null===(n=window[e][r])||void 0===n||n.apply(window[e],arguments)
+      }}(d)}try{new Function('return import("")'),window.rudderAnalyticsBuildType="modern"}catch(c){}
+      var o=document.head||document.getElementsByTagName("head")[0]
+      ;var a=document.body||document.getElementsByTagName("body")[0];window.rudderAnalyticsAddScript=function(e,t,n){
+      var i=document.createElement("script");i.src=e,i.setAttribute("data-loader","RS_JS_SDK"),t&&n&&i.setAttribute(t,n),
+      "async"===r?i.async=true:"defer"===r&&(i.defer=true),o?o.insertBefore(i,o.firstChild):a.insertBefore(i,a.firstChild)},
+      window.rudderAnalyticsMount=function(){
+      "undefined"==typeof globalThis&&(Object.defineProperty(Object.prototype,"__globalThis_magic__",{get:function get(){
+      return this},configurable:true}),__globalThis_magic__.globalThis=__globalThis_magic__,
+      delete Object.prototype.__globalThis_magic__),
+      window.rudderAnalyticsAddScript("".concat(sdkBaseUrl,"/").concat(window.rudderAnalyticsBuildType,"/").concat(sdkName),"data-rsa-write-key","2Iaz9o7qpz4bRuUR9ks4wLybdVm")
+      },
+      "undefined"==typeof Promise||"undefined"==typeof globalThis?window.rudderAnalyticsAddScript("https://polyfill-fastly.io/v3/polyfill.min.js?version=3.111.0&features=Symbol%2CPromise&callback=rudderAnalyticsMount"):window.rudderAnalyticsMount()
+      ;t.load("2Iaz9o7qpz4bRuUR9ks4wLybdVm","https://cvent-dataplane.rudderstack.com",{})}}}();
+    </script>
+    <meta charset="utf-8" />
+<style>/* @see https://github.com/aFarkas/lazysizes#broken-image-symbol */.js img.lazyload:not([src]) { visibility: hidden; }/* @see https://github.com/aFarkas/lazysizes#automatically-setting-the-sizes-attribute */.js img.lazyloaded[data-sizes=auto] { display: block; width: 100%; }</style>
+<link rel="canonical" href="https://www.cvent.com/meta.json" />
+<meta name="robots" content="noindex, nofollow" />
+<meta property="og:image" content="https://www.cvent.com/sites/default/files/image/2018-03/Cvent-Event-Management-Hospitality.jpg" />
+<link rel="alternate" hreflang="x-default" href="https://www.cvent.com/en/404" />
+<link rel="alternate" hreflang="en" href="https://www.cvent.com/en/404" />
+<meta name="Generator" content="Drupal 10 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="google-site-verification" content="Y5H9Cgux7ax83qVdtznDWYwZw6JAqr8YDF24_xfKp9o" />
+<link rel="preload" href="/themes/custom/themekit/css/fonts.css" as="style" />
+<link rel="stylesheet" href="/themes/custom/themekit/css/fonts.css" />
+<link rel="preload" href="/themes/custom/themekit/fonts/icomoon/fonts/icomoon.woff?48442214" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="//cdn.optimizely.com/js/96642877.js" as="script" />
+<link rel="preconnect" href="//logx.optimizely.com" />
+<link rel="dns-prefetch" href="https://cdn.optimizely.com" />
+<link rel="preconnect" href="https://cdn.bizible.com" />
+<link rel="dns-prefetch" href="https://cdn.bizible.com" />
+<link rel="preconnect" href="https://hello.cvent.com/" />
+<link rel="dns-prefetch" href="https://hello.cvent.com/js/forms2/js/forms2.min.js" />
+<link rel="preconnect" href="https://www.google.com" />
+<link rel="dns-prefetch" href="https://www.google.com/recaptcha/api.js" />
+<link rel="preconnect" href="https://ipinfo.io/" />
+<link rel="dns-prefetch" href="https://ipinfo.io/" />
+<link rel="preconnect" href="https://privacy-policy.truste.com" />
+<link rel="preconnect" href="https://play.vidyard.com/" />
+<link rel="dns-prefetch" href="https://privacy-policy.truste.com/privacy-seal/seal?rid=ee5750cf-90ca-4784-b0ba-09ae26595ced" />
+<link rel="dns-prefetch" href="https://cdn.quickemailverification.com" />
+<script>window.a2a_config=window.a2a_config||{};a2a_config.callbacks=[];a2a_config.overlays=[];a2a_config.templates={};</script>
+
+    <title>404 | Cvent</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/themes/custom/themekit/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/themes/custom/themekit/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/themes/custom/themekit/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/themes/custom/themekit/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/themes/custom/themekit/images/favicon/safari-pinned-tab.svg" color="#0098e3">
+    <link rel="shortcut icon" href="/themes/custom/themekit/images/favicon/favicon.ico">
+    <meta name="msapplication-TileColor" content="#2b5797">
+    <meta name="msapplication-config" content="/themes/custom/themekit/images/favicon/browserconfig.xml">
+    <meta name="theme-color" content="#0098e3">
+    <link rel="stylesheet" media="all" href="/sites/default/files/css/css_xyqX1KiRTkaIKixfJAROPamqPVVTL2q_vJwB4hAOXQE.css?delta=0&amp;language=en&amp;theme=themekit&amp;include=eJx1UFtywyAMvBA2H7lC78HIoBjFgBgkp-OcPiRxPek0_QBWix6rDaCQYMNmJ4xwJW5iPDe0Fxk880L4CkNbK6SxNp4bihg8uQxtQWWLp2GHQ16LjwsVk-C22cdlhD1BchkDgUtUFrF_qVEjZjSi5JetwNUeyMgmitlOIF1JApHtF85dDMy4iy7cMiS67aK_nqLNs_lC-io8ojMX7XVXLOoazsSlP4EaerV7LN-kPmIzZ0raPfJQtfOml5BuDvOE4SArNJgb1CiHWwczrqWuUyKJGH6kFw64j_erKGcnvlFVsatS6v2Hx_6vhMJKZ_LwGCT2A9cXDiiFakW1b3iMNMfUj17kzQi60ZT-mR40u4nD9vkXkroEJbjabXfKnOQOygbknw" />
+<link rel="stylesheet" media="all" href="/sites/default/files/css/css_ctX2VC2altSyhF1m81wYxkd4nQnyD4d9RJrOauPnm7M.css?delta=1&amp;language=en&amp;theme=themekit&amp;include=eJx1UFtywyAMvBA2H7lC78HIoBjFgBgkp-OcPiRxPek0_QBWix6rDaCQYMNmJ4xwJW5iPDe0Fxk880L4CkNbK6SxNp4bihg8uQxtQWWLp2GHQ16LjwsVk-C22cdlhD1BchkDgUtUFrF_qVEjZjSi5JetwNUeyMgmitlOIF1JApHtF85dDMy4iy7cMiS67aK_nqLNs_lC-io8ojMX7XVXLOoazsSlP4EaerV7LN-kPmIzZ0raPfJQtfOml5BuDvOE4SArNJgb1CiHWwczrqWuUyKJGH6kFw64j_erKGcnvlFVsatS6v2Hx_6vhMJKZ_LwGCT2A9cXDiiFakW1b3iMNMfUj17kzQi60ZT-mR40u4nD9vkXkroEJbjabXfKnOQOygbknw" />
+
+    <script src="//cdn.optimizely.com/js/96642877.js"></script>
+<script src="/sites/default/files/js/js_p-xmccfrcNNony8lLzT7hMrEDnEaV3aVI0gFGmZbDe4.js?scope=header&amp;delta=1&amp;language=en&amp;theme=themekit&amp;include=eJx1UFtywyAMvBA2H7lC78HIoBjFgBgkp-OcPiRxPek0_QBWix6rDaCQYMNmJ4xwJW5iPDe0Fxk880L4CkNbK6SxNp4bihg8uQxtQWWLp2GHQ16LjwsVk-C22cdlhD1BchkDgUtUFrF_qVEjZjSi5JetwNUeyMgmitlOIF1JApHtF85dDMy4iy7cMiS67aK_nqLNs_lC-io8ojMX7XVXLOoazsSlP4EaerV7LN-kPmIzZ0raPfJQtfOml5BuDvOE4SArNJgb1CiHWwczrqWuUyKJGH6kFw64j_erKGcnvlFVsatS6v2Hx_6vhMJKZ_LwGCT2A9cXDiiFakW1b3iMNMfUj17kzQi60ZT-mR40u4nD9vkXkroEJbjabXfKnOQOygbknw"></script>
+<script src="//cdn.bizible.com/scripts/bizible.js" async type="text/plain" class="optanon-category-C0004"></script>
+
+    <meta name="theme-color" content="#8eabc3">
+  </head>
+  <body class="node-9331 path-metajson page-node-type-landing-page">
+   <!--added navigation svgs here-->
+    <svg xmlns="http://www.w3.org/2000/svg" style="display: none; text-align:center;">
+      <symbol width="10" height="6" viewBox="0 0 10 6" fill="none" id="icon-desktop-chevron">
+        <path d="M0.925781 0.773438L4.91278 4.77344" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+        <path d="M8.92578 0.773438L4.93879 4.77344" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+      </symbol>
+      <symbol id="icon-chevron-down" width="10" height="7" viewBox="0 0 10 7" fill="currentColor">
+        <path d="M0.925781 1.5L4.91278 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+        <path d="M8.92578 1.5L4.93879 5.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"></path>
+      </symbol>
+      <symbol id="icon-chevron-mobile" width="25" height="24" viewBox="0 0 25 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+        <path d="M6.5 9L12.4805 15" stroke="currentColor" stroke-width="2.18182" stroke-linecap="round"></path>
+        <path d="M18.5 9L12.5195 15" stroke="currentColor" stroke-width="2.18182" stroke-linecap="round"></path>
+      </symbol>
+      <symbol id="icon-search" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
+        <path fill-rule="evenodd" clip-rule="evenodd" d="M15.6439 13.2934L19.5123 17.164C20.1626 17.8148 20.1626 18.8697 19.5123 19.5205C18.8573 20.1598 17.8122 20.1598 17.1571 19.5205L13.2886 15.6508C9.63647 18.0938 4.72777 17.3664 1.94003 13.9692C-0.847705 10.5719 -0.605194 5.61291 2.50071 2.50421C5.6066 -0.604487 10.5628 -0.848885 13.9592 1.93918C17.3555 4.72725 18.0842 9.63838 15.6439 13.2934ZM14.587 8.55168C14.587 5.21518 11.8837 2.51041 8.54906 2.51041C5.21591 2.51409 2.51478 5.2167 2.5111 8.55168C2.5111 11.8882 5.21439 14.5929 8.54906 14.5929C11.8837 14.5929 14.587 11.8882 14.587 8.55168Z" fill="currentColor"/>
+      </symbol>
+      <symbol id="icon-login" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+      <rect width="24" height="24" fill="white"/>
+      <path d="M11.9167 12.1667C14.448 12.1667 16.5 10.1146 16.5 7.58333C16.5 5.05203 14.448 3 11.9167 3C9.38536 3 7.33333 5.05203 7.33333 7.58333C7.33333 10.1146 9.38536 12.1667 11.9167 12.1667Z" fill="currentColor"/>
+      <path d="M11.9167 13.417C7.54651 13.422 4.00505 16.9635 4 21.3337C4 21.5638 4.18655 21.7503 4.41667 21.7503H19.4167C19.6468 21.7503 19.8333 21.5638 19.8333 21.3337C19.8283 16.9635 16.2868 13.422 11.9167 13.417Z" fill="currentColor"/>
+      </symbol>
+
+    </svg>
+    <!--end of navigation svgs-->
+        <div id="skip-to-content">
+      <a href="#skip-location-content" class="skip-to-content-link">Skip to main content</a>
+    </div>
+    
+      <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+<div class="layout-container">
+    <div class="region region-featured">
+    <div class="wrapper">
+      <div id="block-exitoverlaysblock" class="block block-cvent-notifications block-exit-overlays-block">
+  
+    
+      <div><div class="exit-overlays-wrapper"></div>
+</div>
+
+  </div>
+
+    </div>
+  </div>
+
+  <header role="banner">
+      <div class="region region-header-top">
+    <div class="wrapper">
+      <div id="block-notificationsblock" class="block block-cvent-notifications block-notifications-block">
+  
+    
+      <div><div class="notifications-ajax-wrapper"></div>
+</div>
+
+  </div>
+<div  class="views-element-container block block-views block-views-blocknotifications-block-1 bg-color-light-gray cvent-notification" id="block-views-block-notifications-block-1">
+  <div class="notification-content">
+    <p>See how Cvent can solve your biggest event challenges. <a href="https://www.cvent.com/en/event-marketing-management/online-demo?i_cid=od_urgencybanner_general">Watch a 15-minute demo.</a></p>
+  </div>
+</div>
+<div class="cvent-header-search-form block block-cvent-search block-cvent-header-search-block" data-drupal-selector="cvent-header-search-form" id="block-search-form-header">
+  
+    
+      <form action="/meta.json" method="post" id="cvent-header-search-form" accept-charset="UTF-8">
+  <div class="js-form-item form-item js-form-type-search form-type-search js-form-item-search form-item-search form-no-label">
+      <label for="edit-search" class="visually-hidden">Search cvent.com</label>
+        <input id="edit-search-field" title="Enter the terms you wish to search for." data-drupal-selector="edit-search" type="search" name="search" value="" size="15" maxlength="128" class="form-search" />
+
+        </div>
+<input autocomplete="off" data-drupal-selector="form-1ycarpive5-qcjmto6q6zkgcbossmgqbkq3s6rotj8e" type="hidden" name="form_build_id" value="form-1YcArPIVE5-qcJmTo6q6ZKGcbossmGqBkq3s6RotJ8E" />
+<input data-drupal-selector="edit-cvent-header-search-form" type="hidden" name="form_id" value="cvent_header_search_form" />
+<div id="edit-actions-btn" data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper"><input id="edit-submit-btn" data-drupal-selector="edit-submit" type="submit" value="Search" class="button js-form-submit form-submit" />
+</div>
+
+</form>
+
+  </div>
+
+    </div>
+  </div>
+
+    
+
+
+  <div class="region region-header initialized">
+    <div class="wrapper">
+      <div id="block-themekit-branding" class="block block-system block-system-branding-block">
+  
+    
+        <a href="/" rel="home" class="site-logo" aria-label="Cvent home">
+    </a>
+        <button id="hamburger" type="button" data-toggle="block-themekit-main-menu-menu" title="Menu Icon Button" class='hamburger-btn menu-icon' aria-label="Open menu to see all options" aria-expanded="false" aria-controls="block-themekit-main-menu">
+    <i class="bx bx-menu" aria-hidden="true"></i>
+  </button>
+</div>
+<nav  id="block-mainnavigationuk" class="block block-menu navigation menu--main menu--main-uk" role="navigation" aria-labelledby="block-mainnavigationuk-menu">
+            
+  <span  id="block-mainnavigationuk-menu" class="visually-hidden">Main navigation (MICE)</span>
+  
+
+        
+
+  <div class="form-item mobile-search">
+    <input title="Search" placeholder="Search" aria-label="Search field" role="searchbox" type="text" name="form_search" value="" class="form_search" tabindex="0">
+    <button class='search-mob-btn' aria-label="Search cvent.com">
+      <svg class="search-cta-mobile" width="24" height="24">
+        <use xlink:href="#icon-search"></use>
+      </svg>
+    </button>
+  </div>
+
+<ul class="menu menu-bar menu-level-0 " role="menubar">
+                      
+              <li  role="menuitem">
+          
+                                
+<button type="button"  class="menu_link_content menu-link-contentmain-uk view-mode-default dropdown-btn rotate" data-dropdown="d3384ec1-4490-401b-a014-e776d0c6c6b7" aria-haspopup="true" aria-expanded="false">
+    Products
+    <svg width="24" height="24" class="desk-hidden">
+        <use xlink:href="#icon-chevron-mobile"></use>
+    </svg>
+    <svg width="10" height="6" class="mob-hidden">
+      <use xlink:href="#icon-desktop-chevron"></use>
+    </svg>
+</button>
+    
+        <div class="menu-level--1 dropdown" id="d3384ec1-4490-401b-a014-e776d0c6c6b7">
+                  
+              <div  class="dropdown-list">
+                                
+<button  class="menu_link_content menu-link-contentmain-uk view-mode-dropdown-list nav-link inner-dropdown-btn rotate90 menu-item desk-hidden" data-dropdown="dropdown1" aria-haspopup="true" aria-expanded="false" aria-label="browse">
+    Back
+    <svg width="24" height="24" class="desk-hidden">
+        <use xlink:href="#icon-chevron-mobile"></use>
+    </svg>
+</button>
+    
+                
+            
+                        <div class="menu-level-3 dropdown-list-wrapper">
+                                                    <div  class="menu--accordion-item">
+                                            
+<div class='inner-category'>
+    <span class="dropdown-link-title before-events">BEFORE YOUR EVENTS</span>
+    <button type="button" class="desk-hidden accordion-btn" aria-label="BEFORE YOUR EVENTS" aria-expanded="false" aria-controls='dropdown-17736'>
+        <svg width="24" height="24">
+          <use xlink:href="#icon-chevron-mobile"></use>
+        </svg>
+    </button>
+</div>
+
+    
+
+<ul class=" menu-level-4 menu--accordion-list" role="menu">
+                      
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/event-registration-software" class="dropdown-link">Registration &amp; marketing</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/cvent-supplier-network" class="dropdown-link">Venue &amp; vendor sourcing</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/cvent-event-design-software" class="dropdown-link">Event diagramming</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/passkey-room-block-management" class="dropdown-link">Room blocks</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/spend-workflow" class="dropdown-link">Approvals &amp; budgeting</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/abstract-management-software" class="dropdown-link">Speaker management</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/exhibitor-management" class="dropdown-link">Exhibitor management</a>
+
+
+
+                  </li>
+                    </ul>
+
+
+
+
+                          </div>
+                                                                  <div  class="menu--accordion-item">
+                                            
+<div class='inner-category'>
+    <span class="dropdown-link-title during-events">DURING YOUR EVENTS</span>
+    <button type="button" class="desk-hidden accordion-btn" aria-label="DURING YOUR EVENTS" aria-expanded="false" aria-controls='dropdown-17976'>
+        <svg width="24" height="24">
+          <use xlink:href="#icon-chevron-mobile"></use>
+        </svg>
+    </button>
+</div>
+
+    
+
+<ul class=" menu-level-4 menu--accordion-list" role="menu">
+                      
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/mobile-event-apps" class="dropdown-link">Event app</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/onarrival-event-check-in-software" class="dropdown-link">Check-in &amp; badging</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/attendee-hub" class="dropdown-link">Attendee engagement</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/cvent-icapture" class="dropdown-link">Trade show lead capture</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/cvent-jifflenow" class="dropdown-link">Trade show meetings</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/virtual-event-platform" class="dropdown-link">Virtual experience</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/webinar-platform" class="dropdown-link">Webinars</a>
+
+
+
+                  </li>
+                    </ul>
+
+
+
+
+                          </div>
+                                                                  <div  class="menu--accordion-item">
+                                            
+<div class='inner-category'>
+    <span class="dropdown-link-title after-events">AFTER YOUR EVENTS</span>
+    <button type="button" class="desk-hidden accordion-btn" aria-label="AFTER YOUR EVENTS" aria-expanded="false" aria-controls='dropdown-18116'>
+        <svg width="24" height="24">
+          <use xlink:href="#icon-chevron-mobile"></use>
+        </svg>
+    </button>
+</div>
+
+    
+
+<ul class=" menu-level-4 menu--accordion-list" role="menu">
+                      
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-management-software/event-reporting" class="dropdown-link">Event &amp; attendee insights</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-management-software/cvent-integrations" class="dropdown-link">Integrations</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/online-survey-software" class="dropdown-link">Surveys</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/lead-capture" class="dropdown-link">Lead retrieval</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/events-plus" class="dropdown-link">Event video</a>
+
+
+
+                  </li>
+                    </ul>
+
+
+
+
+                          </div>
+                                    </div>
+        
+    
+        
+
+                          
+<a href="https://www.cvent.com/en/products" class="product-link">See all products</a>
+
+
+
+            
+
+
+
+                  </div>
+                              
+              <div  class="dropdown-sidebar">
+                                
+<div class="dropdown-sidebar--image">
+            <img src="https://www.cvent.com/sites/default/files/styles/max_445w/public/image/2025-01/product_sidebar_block.webp?itok=UBEgTMiW" alt=""  width="520" height="320">
+      </div>
+<div class="dropdown-sidebar-inner-wrapper">
+    <p class="sidebar-heading">Interactive demo library</p>
+    <p>See our products in action to learn how Cvent can help you.</p>
+            <a href="/en/interactive-demo-library" class="button-blue">Take a tour</a>
+    </div>
+
+                  </div>
+                              </div>
+  
+
+
+
+                  </li>
+                                  
+              <li  class="dropdown-events" role="menuitem">
+          
+                                
+<button type="button"  class="menu_link_content menu-link-contentmain-uk view-mode-default dropdown-btn rotate" data-dropdown="b44ae8d7-2a69-43ab-bc8d-f82a32d2569e" aria-haspopup="true" aria-expanded="false">
+    Event types
+    <svg width="24" height="24" class="desk-hidden">
+        <use xlink:href="#icon-chevron-mobile"></use>
+    </svg>
+    <svg width="10" height="6" class="mob-hidden">
+      <use xlink:href="#icon-desktop-chevron"></use>
+    </svg>
+</button>
+    
+        <div class="menu-level--1 dropdown" id="b44ae8d7-2a69-43ab-bc8d-f82a32d2569e">
+                  
+              <div  class="dropdown-list">
+                                
+<button  class="menu_link_content menu-link-contentmain-uk view-mode-dropdown-list nav-link inner-dropdown-btn rotate90 menu-item desk-hidden" data-dropdown="dropdown1" aria-haspopup="true" aria-expanded="false" aria-label="browse">
+    Back
+    <svg width="24" height="24" class="desk-hidden">
+        <use xlink:href="#icon-chevron-mobile"></use>
+    </svg>
+</button>
+    
+                
+            
+                        <div class="menu-level-3 dropdown-list-wrapper">
+                                                    <div  class="menu--accordion-item">
+                                            
+<div class='inner-category'>
+    <span class="dropdown-link-title industry">YOUR INDUSTRY</span>
+    <button type="button" class="desk-hidden accordion-btn" aria-label="YOUR INDUSTRY" aria-expanded="false" aria-controls='dropdown-18346'>
+        <svg width="24" height="24">
+          <use xlink:href="#icon-chevron-mobile"></use>
+        </svg>
+    </button>
+</div>
+
+    
+
+<ul class=" menu-level-4 menu--accordion-list" role="menu">
+                      
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/planner-solutions" class="dropdown-link">Agency</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/association-solutions" class="dropdown-link">Association</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/financial-services-solutions" class="dropdown-link">Financial services</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/education-solutions" class="dropdown-link">Higher education</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/life-sciences-solutions" class="dropdown-link">Life sciences</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/high-tech" class="dropdown-link">Technology</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="https://www.cvent.com/en/event-marketing-management/solutions#cvent-paragraph-layout_content-923686" class="product-link last-link">See all industries</a>
+
+
+
+                  </li>
+                    </ul>
+
+
+
+
+                          </div>
+                                                                  <div  class="menu--accordion-item">
+                                            
+<div class='inner-category'>
+    <span class="dropdown-link-title event-format">YOUR FORMAT</span>
+    <button type="button" class="desk-hidden accordion-btn" aria-label="YOUR FORMAT" aria-expanded="false" aria-controls='dropdown-18481'>
+        <svg width="24" height="24">
+          <use xlink:href="#icon-chevron-mobile"></use>
+        </svg>
+    </button>
+</div>
+
+    
+
+<ul class=" menu-level-4 menu--accordion-list" role="menu">
+                      
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/in-person-event-platform" class="dropdown-link">In-person</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/hybrid-event-platform" class="dropdown-link">Hybrid</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/virtual-event-platform" class="dropdown-link">Virtual</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/webinar-platform" class="dropdown-link">Webinar</a>
+
+
+
+                  </li>
+                    </ul>
+
+
+
+
+                          </div>
+                                                                  <div  class="menu--accordion-item">
+                                            
+<div class='inner-category'>
+    <span class="dropdown-link-title event-type">YOUR EVENT</span>
+    <button type="button" class="desk-hidden accordion-btn" aria-label="YOUR EVENT" aria-expanded="false" aria-controls='dropdown-18571'>
+        <svg width="24" height="24">
+          <use xlink:href="#icon-chevron-mobile"></use>
+        </svg>
+    </button>
+</div>
+
+    
+
+<ul class=" menu-level-4 menu--accordion-list" role="menu">
+                      
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/conference-management" class="dropdown-link">Conference</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="https://www.cvent.com/en/event-marketing-management/field-marketing-software" class="dropdown-link">Field marketing</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/internal-events" class="dropdown-link">Internal event</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/networking-events" class="dropdown-link">Networking</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/sales-kickoff-events" class="dropdown-link">Sales kickoff</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/trade-show-solutions" class="dropdown-link">Trade show</a>
+
+
+
+                  </li>
+                    </ul>
+
+
+
+
+                          </div>
+                                                                  <div  class="menu--accordion-item">
+                                            
+<div class='inner-category'>
+    <span class="dropdown-link-title role">YOUR ROLE</span>
+    <button type="button" class="desk-hidden accordion-btn" aria-label="YOUR ROLE" aria-expanded="false" aria-controls='dropdown-18641'>
+        <svg width="24" height="24">
+          <use xlink:href="#icon-chevron-mobile"></use>
+        </svg>
+    </button>
+</div>
+
+    
+
+<ul class=" menu-level-4 menu--accordion-list" role="menu">
+                      
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-management-software" class="dropdown-link">Event planner</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-platform" class="dropdown-link">Marketer</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/corporate-travel-management" class="dropdown-link">Travel manager</a>
+
+
+
+                  </li>
+                    </ul>
+
+
+
+
+                          </div>
+                                    </div>
+        
+    
+        
+
+            
+
+
+
+                  </div>
+                              
+              <div  class="dropdown-sidebar">
+                                
+<div class="dropdown-sidebar--image">
+            <img src="https://www.cvent.com/sites/default/files/styles/max_445w/public/image/2024-10/WEBP_Event%20Type.webp?itok=E8kUSf85" alt=""  width="520" height="320">
+      </div>
+<div class="dropdown-sidebar-inner-wrapper">
+    <p class="sidebar-heading">Event planning and marketing in one place</p>
+    <p>Cvent&#039;s software helps you manage every stage of the event process.</p>
+            <a href="/en/event-management-software" class="button-blue">Learn more</a>
+    </div>
+
+                  </div>
+                              </div>
+  
+
+
+
+                  </li>
+                                  
+              <li  role="menuitem">
+          
+                                
+<button type="button"  class="menu_link_content menu-link-contentmain-uk view-mode-default dropdown-btn rotate" data-dropdown="c9496280-f025-4e1e-a315-efe5633b3489" aria-haspopup="true" aria-expanded="false">
+    Resources
+    <svg width="24" height="24" class="desk-hidden">
+        <use xlink:href="#icon-chevron-mobile"></use>
+    </svg>
+    <svg width="10" height="6" class="mob-hidden">
+      <use xlink:href="#icon-desktop-chevron"></use>
+    </svg>
+</button>
+    
+        <div class="menu-level--1 dropdown" id="c9496280-f025-4e1e-a315-efe5633b3489">
+                  
+              <div  class="dropdown-list">
+                                
+<button  class="menu_link_content menu-link-contentmain-uk view-mode-dropdown-list nav-link inner-dropdown-btn rotate90 menu-item desk-hidden" data-dropdown="dropdown1" aria-haspopup="true" aria-expanded="false" aria-label="browse">
+    Back
+    <svg width="24" height="24" class="desk-hidden">
+        <use xlink:href="#icon-chevron-mobile"></use>
+    </svg>
+</button>
+    
+                
+            
+                        <div class="menu-level-3 dropdown-list-wrapper">
+                                                    <div  class="menu--accordion-item">
+                                            
+<div class='inner-category'>
+    <span class="dropdown-link-title explore">EXPLORE</span>
+    <button type="button" class="desk-hidden accordion-btn" aria-label="EXPLORE" aria-expanded="false" aria-controls='dropdown-18851'>
+        <svg width="24" height="24">
+          <use xlink:href="#icon-chevron-mobile"></use>
+        </svg>
+    </button>
+</div>
+
+    
+
+<ul class=" menu-level-4 menu--accordion-list" role="menu">
+                      
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/resources" class="dropdown-link">All resources</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/blog" class="dropdown-link">Blog</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/case-studies" class="dropdown-link">Case studies</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/podcast" class="dropdown-link">Podcast</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="https://cvent.me/l44KmP" target="_blank" class="dropdown-link">Upcoming events</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="https://cvent.me/2Mq0qE" target="_blank" class="dropdown-link">Upcoming webinars</a>
+
+
+
+                  </li>
+                    </ul>
+
+
+
+
+                          </div>
+                                                                  <div  class="menu--accordion-item">
+                                            
+<div class='inner-category'>
+    <span class="dropdown-link-title learn">LEARN</span>
+    <button type="button" class="desk-hidden accordion-btn" aria-label="LEARN" aria-expanded="false" aria-controls='dropdown-18951'>
+        <svg width="24" height="24">
+          <use xlink:href="#icon-chevron-mobile"></use>
+        </svg>
+    </button>
+</div>
+
+    
+
+<ul class=" menu-level-4 menu--accordion-list" role="menu">
+                      
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="https://community.cvent.com/home" target="_blank" class="dropdown-link">Community</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/cvent-certification" class="dropdown-link">Certification</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/academy" class="dropdown-link">Training</a>
+
+
+
+                  </li>
+                    </ul>
+
+
+
+
+                          </div>
+                                                                  <div  class="menu--accordion-item">
+                                            
+<div class='inner-category'>
+    <span class="dropdown-link-title get-help">GET HELP</span>
+    <button type="button" class="desk-hidden accordion-btn" aria-label="GET HELP" aria-expanded="false" aria-controls='dropdown-19026'>
+        <svg width="24" height="24">
+          <use xlink:href="#icon-chevron-mobile"></use>
+        </svg>
+    </button>
+</div>
+
+    
+
+<ul class=" menu-level-4 menu--accordion-list" role="menu">
+                      
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="https://support.cvent.com/s/knowledgebase" target="_blank" class="dropdown-link">Knowledge Base</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/support/event-services" class="dropdown-link">Professional Services</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/contact/support" class="dropdown-link">Support</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/security" class="dropdown-link">Security</a>
+
+
+
+                  </li>
+                    </ul>
+
+
+
+
+                          </div>
+                                    </div>
+        
+    
+        
+
+            
+
+
+
+                  </div>
+                              
+              <div  class="dropdown-sidebar">
+                                
+<div class="dropdown-sidebar--image">
+            <img src="https://www.cvent.com/sites/default/files/styles/max_445w/public/image/2024-10/Regional%20sites_WEBP_Resources.webp?itok=yCjwexVa" alt=""  width="520" height="320">
+      </div>
+<div class="dropdown-sidebar-inner-wrapper">
+    <p class="sidebar-heading">See how Cvent can solve your biggest event challenges</p>
+    <p></p>
+            <a href="/en/event-marketing-management/online-demo" class="button-blue">Watch a 15-minute demo</a>
+    </div>
+
+                  </div>
+                              </div>
+  
+
+
+
+                  </li>
+                                  
+              <li  role="menuitem">
+          
+                                
+<button type="button"  class="menu_link_content menu-link-contentmain-uk view-mode-default dropdown-btn rotate" data-dropdown="94b171ae-61bb-4f7e-a958-5251804556a8" aria-haspopup="true" aria-expanded="false">
+    Company
+    <svg width="24" height="24" class="desk-hidden">
+        <use xlink:href="#icon-chevron-mobile"></use>
+    </svg>
+    <svg width="10" height="6" class="mob-hidden">
+      <use xlink:href="#icon-desktop-chevron"></use>
+    </svg>
+</button>
+    
+        <div class="menu-level--1 dropdown" id="94b171ae-61bb-4f7e-a958-5251804556a8">
+                  
+              <div  class="dropdown-list">
+                                
+<button  class="menu_link_content menu-link-contentmain-uk view-mode-dropdown-list nav-link inner-dropdown-btn rotate90 menu-item desk-hidden" data-dropdown="dropdown1" aria-haspopup="true" aria-expanded="false" aria-label="browse">
+    Back
+    <svg width="24" height="24" class="desk-hidden">
+        <use xlink:href="#icon-chevron-mobile"></use>
+    </svg>
+</button>
+    
+                
+            
+                        <div class="menu-level-3 dropdown-list-wrapper">
+                                                    <div  class="menu--accordion-item">
+                                            
+<div class='inner-category'>
+    <span class="dropdown-link-title about">ABOUT</span>
+    <button type="button" class="desk-hidden accordion-btn" aria-label="ABOUT" aria-expanded="false" aria-controls='dropdown-19271'>
+        <svg width="24" height="24">
+          <use xlink:href="#icon-chevron-mobile"></use>
+        </svg>
+    </button>
+</div>
+
+    
+
+<ul class=" menu-level-4 menu--accordion-list" role="menu">
+                      
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/company-overview" class="dropdown-link">About Cvent</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/cvent-news-and-press-releases" class="dropdown-link">Newsroom</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-marketing-management/accessibility" class="dropdown-link">Accessibility</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/event-management-software/cvent-pricing" class="dropdown-link">Pricing</a>
+
+
+
+                  </li>
+                    </ul>
+
+
+
+
+                          </div>
+                                                                  <div  class="menu--accordion-item">
+                                            
+<div class='inner-category'>
+    <span class="dropdown-link-title work">WORK WITH US</span>
+    <button type="button" class="desk-hidden accordion-btn" aria-label="WORK WITH US" aria-expanded="false" aria-controls='dropdown-19346'>
+        <svg width="24" height="24">
+          <use xlink:href="#icon-chevron-mobile"></use>
+        </svg>
+    </button>
+</div>
+
+    
+
+<ul class=" menu-level-4 menu--accordion-list" role="menu">
+                      
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="https://careers.cvent.com/" target="_blank" class="dropdown-link">Careers</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="https://careers.cvent.com/life-at-cvent" target="_blank" class="dropdown-link">Diversity</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/become-partner" class="dropdown-link">Partner with us</a>
+
+
+
+                  </li>
+                    </ul>
+
+
+
+
+                          </div>
+                                                                  <div  class="menu--accordion-item">
+                                            
+<div class='inner-category'>
+    <span class="dropdown-link-title contact">CONTACT</span>
+    <button type="button" class="desk-hidden accordion-btn" aria-label="CONTACT" aria-expanded="false" aria-controls='dropdown-19421'>
+        <svg width="24" height="24">
+          <use xlink:href="#icon-chevron-mobile"></use>
+        </svg>
+    </button>
+</div>
+
+    
+
+<ul class=" menu-level-4 menu--accordion-list" role="menu">
+                      
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/contact-us" class="dropdown-link">Contact sales</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="https://www.cvent.com/en/contact/support" class="dropdown-link">Contact support</a>
+
+
+
+                  </li>
+                    </ul>
+
+
+
+
+                          </div>
+                                    </div>
+        
+    
+        
+
+            
+
+
+
+                  </div>
+                              
+              <div  class="dropdown-sidebar">
+                                
+<div class="dropdown-sidebar--image">
+            <img src="https://www.cvent.com/sites/default/files/styles/max_445w/public/image/2024-10/WEBP_Career.webp?itok=RYAdsAfh" alt=""  width="520" height="320">
+      </div>
+<div class="dropdown-sidebar-inner-wrapper">
+    <p class="sidebar-heading">Join 4,800+ employees around the world who power our technology</p>
+    <p></p>
+            <a href="https://careers.cvent.com/jobs" target="_blank" class="button-blue">See all positions</a>
+    </div>
+
+                  </div>
+                              </div>
+  
+
+
+
+                  </li>
+                                  
+              <li  class="dropdown-hoteliers green-highlight" role="menuitem">
+          
+                                
+<button type="button"  class="menu_link_content menu-link-contentmain-uk view-mode-default dropdown-btn rotate" data-dropdown="42f2c1eb-d141-4a26-a0b3-19aae98dd9d4" aria-haspopup="true" aria-expanded="false">
+    For hoteliers &amp; venues
+    <svg width="24" height="24" class="desk-hidden">
+        <use xlink:href="#icon-chevron-mobile"></use>
+    </svg>
+    <svg width="10" height="6" class="mob-hidden">
+      <use xlink:href="#icon-desktop-chevron"></use>
+    </svg>
+</button>
+    
+        <div class="menu-level--1 dropdown" id="42f2c1eb-d141-4a26-a0b3-19aae98dd9d4">
+                  
+              <div  class="dropdown-list">
+                                
+<button  class="menu_link_content menu-link-contentmain-uk view-mode-dropdown-list nav-link inner-dropdown-btn rotate90 menu-item desk-hidden" data-dropdown="dropdown1" aria-haspopup="true" aria-expanded="false" aria-label="browse">
+    Back
+    <svg width="24" height="24" class="desk-hidden">
+        <use xlink:href="#icon-chevron-mobile"></use>
+    </svg>
+</button>
+    
+                    <a href="/en/supplier-venue" class="product-link green-cta hr-line">WIN MICE BUSINESS</a>
+
+            
+                        <div class="menu-level-3 dropdown-list-wrapper">
+                                                    <div  class="menu--accordion-item">
+                                            
+<div class='inner-category'>
+    <a href="/en/supplier-venue/group-marketing-solutions" class="dropdown-link-title attract">ATTRACT MEETING PLANNERS</a>
+    <button type="button" class="desk-hidden accordion-btn" aria-label="ATTRACT MEETING PLANNERS" aria-expanded="false" aria-controls='dropdown-19596'>
+        <svg width="24" height="24">
+          <use xlink:href="#icon-chevron-mobile"></use>
+        </svg>
+    </button>
+</div>
+
+    
+
+<ul class=" menu-level-4 menu--accordion-list" role="menu">
+                      
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/supplier-venue/advertising" class="dropdown-link">Digital ads</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/supplier-venue/planner-navigator" class="dropdown-link">Prospect planners</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/cvent-connect-2025-sponsor-and-exhibit" class="dropdown-link">Promote in person</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/supplier-venue/cvent-vendor-marketplace" class="dropdown-link">Vendor marketplace</a>
+
+
+
+                  </li>
+                    </ul>
+
+
+
+
+                          </div>
+                                                                  <div  class="menu--accordion-item">
+                                            
+<div class='inner-category'>
+    <a href="/en/supplier-venue/group-sales-solutions" class="dropdown-link-title convert">CONVERT RFPs</a>
+    <button type="button" class="desk-hidden accordion-btn" aria-label="CONVERT RFPs" aria-expanded="false" aria-controls='dropdown-19731'>
+        <svg width="24" height="24">
+          <use xlink:href="#icon-chevron-mobile"></use>
+        </svg>
+    </button>
+</div>
+
+    
+
+<ul class=" menu-level-4 menu--accordion-list" role="menu">
+                      
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/supplier-venue/3d-virtual-tour-software" class="dropdown-link">Showcase meeting space</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/supplier-venue/new-smart-custom-proposals" class="dropdown-link">Customize proposals</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/supplier-venue/instant-book" class="dropdown-link">Capture instant bookings</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/supplier-venue/cvent-lead-scoring" class="dropdown-link">Manage MICE RFPs</a>
+
+
+
+                  </li>
+                    </ul>
+
+
+
+
+                          </div>
+                                                                  <div  class="menu--accordion-item">
+                                            
+<div class='inner-category'>
+    <a href="/en/supplier-venue/group-operations-solutions" class="dropdown-link-title manage">MANAGE EVENT BOOKINGS</a>
+    <button type="button" class="desk-hidden accordion-btn" aria-label="MANAGE EVENT BOOKINGS" aria-expanded="false" aria-controls='dropdown-19796'>
+        <svg width="24" height="24">
+          <use xlink:href="#icon-chevron-mobile"></use>
+        </svg>
+    </button>
+</div>
+
+    
+
+<ul class=" menu-level-4 menu--accordion-list" role="menu">
+                      
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/supplier-venue/event-diagramming-software" class="dropdown-link">3D diagramming</a>
+
+
+
+                  </li>
+                                  
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/supplier-venue/passkey" class="dropdown-link">Manage room blocks</a>
+
+
+
+                  </li>
+                    </ul>
+
+
+
+
+                          </div>
+                                                                  <div  class="menu--accordion-item">
+                                            
+<div class='inner-category'>
+    <a href="/en/supplier-venue/hotel-business-intelligence" class="dropdown-link-title improve">IMPROVE MICE BUSINESS</a>
+    <button type="button" class="desk-hidden accordion-btn" aria-label="IMPROVE MICE BUSINESS" aria-expanded="false" aria-controls='dropdown-19866'>
+        <svg width="24" height="24">
+          <use xlink:href="#icon-chevron-mobile"></use>
+        </svg>
+    </button>
+</div>
+
+    
+
+<ul class=" menu-level-4 menu--accordion-list" role="menu">
+                      
+              <li  class="default" role="menuitem">
+          
+                                
+<a href="/en/supplier-venue/rfp-metrics" class="dropdown-link">Measure performance</a>
+
+
+
+                  </li>
+                    </ul>
+
+
+
+
+                          </div>
+                                    </div>
+        
+    
+        
+
+              <hr />
+                              <a href="/en/supplier-venue/business-travel-solutions" class="product-link green-cta">WIN CORPORATE TRAVEL</a>
+
+    <div class="dropdown-bottom-wrapper">
+                
+                        <ul class="menu-level-3"  role="menu">
+                                                    <li  class="default"  role="menuitem">
+                                            
+<a href="/en/supplier-venue/transient-grow" class="dropdown-link">Grow corporate travel</a>
+
+
+
+                          </li>
+                                                                  <li  class="default"  role="menuitem">
+                                            
+<a href="/en/supplier-venue/transient-manage" class="dropdown-link">Manage transient RFPs</a>
+
+
+
+                          </li>
+                                                                  <li  class="default"  role="menuitem">
+                                            
+<a href="/en/supplier-venue/transient-distribute" class="dropdown-link">Distribute rates</a>
+
+
+
+                          </li>
+                                                                  <li  class="default"  role="menuitem">
+                                            
+<a href="/en/supplier-venue/transient-evaluate" class="dropdown-link">Evaluate performance</a>
+
+
+
+                          </li>
+                                    </ul>
+        
+    
+        
+    </div>
+
+            
+
+
+
+                  </div>
+                              </div>
+  
+
+
+
+                  </li>
+                  <span class="nav-indicator"></span>
+                    </ul>
+  <div class="mobile-bottom--menubar desk-hidden">
+    
+      
+  <span  id="-menu">Utility Navigation (Mobile)</span>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="/en/request-demo" class="dropdown-link-title request-btn" data-drupal-link-system-path="node/101846">Request Demo</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.cvent.com/venues/" class="dropdown-link-title venue-btn">Find event venues</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://app.cvent.com/" class="dropdown-link-title login-btn">Log in</a>
+              </li>
+        </ul>
+  
+
+
+
+    
+  
+  </div>
+
+
+  </nav>
+ 
+
+<div aria-labelledby="block-utilitynavigation-menu" role="navigation"  id="block-utilitynavigation" class="block block-menu navigation menu--utility-navigation nav-end">
+  <div class="right-container">
+                      
+    <span  class="visually-hidden" id="block-utilitynavigation-menu">Utility navigation</span>
+    
+  
+              
+              <ul class="menu" role="menu">
+                            <li class="menu-item" role="menuitem">
+          <a href="/en/request-demo" class="request-demo" data-drupal-link-system-path="node/101846">Request demo</a>
+                  </li>
+                              <li class="menu-item" role="menuitem">
+          <a href="https://www.cvent.com/venues/" target="_blank" class="venue-link">Find event venues</a>
+                  </li>
+                              <li class="menu-item" role="menuitem">
+          <button type="button" aria-label="Search Cvent.com" class="search-link" target="">
+            <svg width="20" height="20" class="mob-hidden">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+          </button>
+        </li>
+                              <li class="menu-item" role="menuitem">
+          <a href="https://app.cvent.com/"  class="button login-link" target="_self" aria-label="Login link">
+            <svg width="24" height="24">
+              <use xlink:href="#icon-login"></use>
+            </svg>
+            <span>Log in</span>
+          </a>
+                  </li>
+              </ul>
+  
+
+
+      </div>
+</div>
+
+    </div>
+  </div>
+
+        <div class="search-mobile-container"></div>
+  </header>
+  
+  
+  
+
+  
+  <div class="sticky-placeholer"></div>
+    <div class="region region-highlighted">
+    <div class="wrapper">
+      <div data-drupal-messages-fallback class="hidden"></div>
+
+    </div>
+  </div>
+
+  
+  <div id="skip-location-content">
+    
+  <div id="block-pagebanner" class="block block-cvent-page-banners block-page-banner">
+    
+        
+          
+<div class="field field--name-field-p-header field--type-entity-reference-revisions field--label-hidden field__items">
+      
+
+
+<div id="cvent-paragraph-header_banner_media-1133476"   class="paragraph--id--1133476 paragraph paragraph--type--header-banner-media paragraph--view-mode--default media-alignment-right media-padding-yes bg-color-none header-style-simple no-bg-image color-scheme-light no-lottie-bg-video">
+    <div class="header-banner-media ">
+          <div class="header-banner-media--content color-scheme-light">
+        
+      <div class="field field--name-field-content field--type-entity-reference-revisions field--label-hidden field__items">
+              <div class="field__item">
+
+  <div class="hero--heading">
+    
+              <div class="field field--name-field-title field--type-string field--label-hidden field__item">
+          <h1>
+            Not what you were looking for?
+          </h1>
+        </div>
+      
+  </div>
+
+  <div class="hero—-wysiwyg">
+    
+            <div class="clearfix text-formatted field field--name-field-wysiwyg field--type-text-with-summary field--label-hidden field__item"><p>We can't seem to find the page either. It might have moved, been renamed, or doesn't exist anymore. </p>
+
+<p><a class="cta-link" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="38f6f036-0639-41d0-8627-721e2522e350" href="/en">Go to Cvent home</a></p>
+
+<ul><li>Create interactive experiences for any event using <a href="https://www.cvent.com/en/event-marketing-management/attendee-hub">Cvent Attendee Hub</a></li>
+	<li>Learn tips and trends for meetings and events on the <a href="https://www.cvent.com/blog">Cvent blog</a></li>
+	<li>Take your skills to the next level for free with <a href="https://www.cvent.com/en/academy">Cvent Academy</a></li>
+	<li>Find your perfect event venue on the <a href="https://www.cvent.com/venues/">Cvent Supplier Network</a></li>
+</ul></div>
+      
+  </div>
+
+
+
+</div>
+          </div>
+  
+      </div>
+              <div class="header-banner-media--media">
+        
+            <div class="field field--name-field-media field--type-entity-reference-revisions field--label-hidden field__item">
+
+
+<div id="cvent-paragraph-header_banner_media_image_or_vid-1133471"  class="paragraph--id--1133471 paragraph paragraph--type--header-banner-media-image-or-vid paragraph--view-mode--default">
+  
+            <div class="field field--name-field-p-media-item field--type-entity-reference-revisions field--label-hidden field__item">
+
+
+<div id="cvent-paragraph-header_banner_media_image-1133466"  class="paragraph--id--1133466 paragraph paragraph--type--header-banner-media-image paragraph--view-mode--default image-style-override- img-mimetype-">
+      
+      <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__items">
+              <div class="field__item">    <picture>
+                  <source srcset="/sites/default/files/styles/max_1170w/public/image/2022-02/carina-illustration-hero-connecting_0.webp?itok=6jhdGBhr 1x" type="image/webp" width="800" height="600"/>
+              <source srcset="/sites/default/files/styles/max_1170w/public/image/2022-02/carina-illustration-hero-connecting_0.png?itok=6jhdGBhr 1x" type="image/png" width="800" height="600"/>
+                  <img loading="eager" srcset="/sites/default/files/styles/max_1170w/public/image/2022-02/carina-illustration-hero-connecting_0.png?itok=6jhdGBhr 1x" width="800" height="600" src="/sites/default/files/styles/header_banner_800x600/public/image/2022-02/carina-illustration-hero-connecting_0.png?h=827069f2&amp;itok=M8pTnjmo" alt="" typeof="foaf:Image" />
+
+  </picture>
+
+</div>
+          </div>
+  
+  </div>
+</div>
+      
+</div></div>
+      
+      </div>
+      </div>
+
+</div>
+
+  </div>
+
+      </div>
+
+  </div>
+
+  <main id="main-content" role="main">
+    <div class="layout-content">
+        <div class="region region-content">
+    <div class="wrapper">
+      <div id="block-themekit-content" class="block block-system block-system-main-block">
+  
+    
+      
+
+
+
+<article about="/en/404" class="node node--type-landing-page node--view-mode-full">
+
+  
+    
+
+  <div class="node__content">
+    
+<div class="field field--name-field-p-content field--type-entity-reference-revisions field--label-hidden field__items">
+      
+  
+  
+
+
+<div id="cvent-paragraph-compound_content_bar-53476"  class="paragraph--id--53476 paragraph paragraph--type--compound-content-bar paragraph--view-mode--default item-count-3 bg-color-none no-bg angle-none angle-type-none top--margin--x-small">
+    <div class="compound-content-bar">
+    <div class="compound-content-bar__container">
+            
+      <div class="field field--name-field-p-content-bar-items field--type-entity-reference-revisions field--label-hidden field__items">
+              <div class="field__item">
+
+
+<div id="cvent-paragraph-simple_icon_content-53451"  class="paragraph--id--53451 paragraph paragraph--type--simple-icon-content paragraph--view-mode--default icon-layout-top-center alignment--center">
+  <div class="simple-icon-content">
+    <div class="simple-icon-content__icon">
+      
+            <div class="field field--name-field-p-icon field--type-entity-reference-revisions field--label-hidden field__item">
+
+
+<div id="cvent-paragraph-simple_svg-53446"  class="paragraph--id--53446 paragraph paragraph--type--simple-svg paragraph--view-mode--default">
+  
+            <div class="field field--name-field-svg field--type-entity-reference field--label-hidden field__item"><div>
+      <div class="svg-container">
+              <img alt="" class="lazyload" data-src="/sites/default/files/2022-10/video-player-adjust-finger_0.svg" typeof="foaf:Image" />
+
+          </div>
+  </div>
+</div>
+      
+</div></div>
+      
+    </div>
+    <div class="simple-icon-content__content">
+      
+            <div class="clearfix text-formatted field field--name-field-description field--type-text-long field--label-hidden field__item"><p><a class="cta-link" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="277a46af-e2b5-4929-b705-c0792bdc0d81" href="/en/event-marketing-management/online-demo">Watch a 30-minute demo</a></p></div>
+      
+    </div>
+  </div>
+</div></div>
+              <div class="field__item">
+
+
+<div id="cvent-paragraph-simple_icon_content-53461"  class="paragraph--id--53461 paragraph paragraph--type--simple-icon-content paragraph--view-mode--default icon-layout-top-center alignment--center">
+  <div class="simple-icon-content">
+    <div class="simple-icon-content__icon">
+      
+            <div class="field field--name-field-p-icon field--type-entity-reference-revisions field--label-hidden field__item">
+
+
+<div id="cvent-paragraph-simple_svg-53456"  class="paragraph--id--53456 paragraph paragraph--type--simple-svg paragraph--view-mode--default">
+  
+            <div class="field field--name-field-svg field--type-entity-reference field--label-hidden field__item"><div>
+      <div class="svg-container">
+              <img alt="" class="lazyload" data-src="/sites/default/files/2022-10/building-modern-icon.svg" typeof="foaf:Image" />
+
+          </div>
+  </div>
+</div>
+      
+</div></div>
+      
+    </div>
+    <div class="simple-icon-content__content">
+      
+            <div class="clearfix text-formatted field field--name-field-description field--type-text-long field--label-hidden field__item"><p><a class="cta-link" href="https://www.cvent.com/venues/">Find your next event venue</a></p></div>
+      
+    </div>
+  </div>
+</div></div>
+              <div class="field__item">
+
+
+<div id="cvent-paragraph-simple_icon_content-53471"  class="paragraph--id--53471 paragraph paragraph--type--simple-icon-content paragraph--view-mode--default icon-layout-top-center alignment--center">
+  <div class="simple-icon-content">
+    <div class="simple-icon-content__icon">
+      
+            <div class="field field--name-field-p-icon field--type-entity-reference-revisions field--label-hidden field__item">
+
+
+<div id="cvent-paragraph-simple_svg-53466"  class="paragraph--id--53466 paragraph paragraph--type--simple-svg paragraph--view-mode--default">
+  
+            <div class="field field--name-field-svg field--type-entity-reference field--label-hidden field__item"><div>
+      <div class="svg-container">
+              <img alt="" class="lazyload" data-src="/sites/default/files/2022-06/Native%20mobile%20apps.svg" typeof="foaf:Image" />
+
+          </div>
+  </div>
+</div>
+      
+</div></div>
+      
+    </div>
+    <div class="simple-icon-content__content">
+      
+            <div class="clearfix text-formatted field field--name-field-description field--type-text-long field--label-hidden field__item"><p><a class="cta-link" data-entity-substitution="canonical" data-entity-type="node" data-entity-uuid="1156ae70-7716-462a-8d75-424096d92dfc" href="/en/event-marketing-management/webinar-platform">Host interactive webinars for free</a></p></div>
+      
+    </div>
+  </div>
+</div></div>
+          </div>
+  
+          </div>
+  </div>
+</div>
+
+      
+  
+  
+
+
+<div id="cvent-paragraph-summary_resources-898041"  class="paragraph--id--898041 paragraph paragraph--type--summary-resources paragraph--view-mode--default bg-color-none no-bg angle-none angle-type-none non-nested-summary-resources color-scheme-light">
+  <div class="summary-resources">
+    <div class="summary-resources__container">
+              <div class="paragraph-header">
+          
+  <h2 id="you-may-like" class="field heading field--name-field-summary-title field--type-string field--label-hidden field__item">You may like</h2>
+
+          
+        </div>
+            <div class="summary-output">
+  
+
+
+<div class="resource-card__column">
+<article about="/en/resource/hospitality/managers-guide-meetings-and-events-today" class="node node--type-resource resource--type-ebook node--view-mode-teaser">
+  <div class="category__color gated-resource"></div>
+  <a class="resource-card-link" href="/en/resource/hospitality/managers-guide-meetings-and-events-today">
+    <div class="resource__thumb al_overlay">
+            
+            <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__item">    <picture>
+                  <source media="all and (min-width: 1024px)" type="image/webp" width="600" height="360" data-srcset="/sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/hospitality-managers-guide-ebook-thumbnail.webp?h=22206566&amp;itok=PUMPOnQJ 1x, /sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/hospitality-managers-guide-ebook-thumbnail.webp?h=22206566&amp;itok=PUMPOnQJ 2x"/>
+              <source media="all and (min-width: 1024px)" type="image/jpeg" width="600" height="360" data-srcset="/sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/hospitality-managers-guide-ebook-thumbnail.jpg?h=22206566&amp;itok=PUMPOnQJ 1x, /sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/hospitality-managers-guide-ebook-thumbnail.jpg?h=22206566&amp;itok=PUMPOnQJ 2x"/>
+                  <img loading="lazy" width="600" height="360" alt="Several individuals stand around a table, engaged in discussion while using laptops and reviewing papers." class="lazyload" data-src="/sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/hospitality-managers-guide-ebook-thumbnail.jpg?h=22206566&amp;itok=PUMPOnQJ" typeof="foaf:Image" />
+
+  </picture>
+
+</div>
+      
+
+            <div class="category">
+        
+            <div class="field field--name-field-resource-type field--type-entity-reference field--label-hidden field__item">eBook</div>
+      
+      </div>
+    </div>
+    <div class="node__content">
+      
+            <h2>
+        <span class="field field--name-title field--type-string field--label-hidden">The Manager’s Guide to Meetings and Events Today</span>
+
+      </h2>
+      <span class="cta-link" href="/en/resource/hospitality/managers-guide-meetings-and-events-today">Read more</span>
+      
+    </div>
+  </a>
+</article>
+</div>
+
+
+
+<div class="resource-card__column">
+<article about="https://www.cvent.com/en/resource/hospitality/cvent-planner-pulse-apac" class="node node--type-resource resource--type-report node--view-mode-teaser">
+  <div class="category__color ungated-download-resource"></div>
+  <a class="resource-card-link" href="https://www.cvent.com/en/resource/hospitality/cvent-planner-pulse-apac">
+    <div class="resource__thumb al_overlay">
+            
+            <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__item">    <picture>
+                  <source media="all and (min-width: 1024px)" type="image/webp" width="600" height="360" data-srcset="/sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/planner-pulse-apac-thumbnail.webp?h=22206566&amp;itok=2_LzHkLm 1x, /sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/planner-pulse-apac-thumbnail.webp?h=22206566&amp;itok=2_LzHkLm 2x"/>
+              <source media="all and (min-width: 1024px)" type="image/png" width="600" height="360" data-srcset="/sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/planner-pulse-apac-thumbnail.png?h=22206566&amp;itok=2_LzHkLm 1x, /sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/planner-pulse-apac-thumbnail.png?h=22206566&amp;itok=2_LzHkLm 2x"/>
+                  <img loading="lazy" width="600" height="360" alt="planner-pulse-apac-thumbnail" class="lazyload" data-src="/sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/planner-pulse-apac-thumbnail.png?h=22206566&amp;itok=2_LzHkLm" typeof="foaf:Image" />
+
+  </picture>
+
+</div>
+      
+
+            <div class="category">
+        
+            <div class="field field--name-field-resource-type field--type-entity-reference field--label-hidden field__item">Report</div>
+      
+      </div>
+    </div>
+    <div class="node__content">
+      
+            <h2>
+        <span class="field field--name-title field--type-string field--label-hidden">APAC Planner Pulse Report 2025</span>
+
+      </h2>
+      <span class="cta-link" href="https://www.cvent.com/en/resource/hospitality/cvent-planner-pulse-apac">Read more</span>
+      
+    </div>
+  </a>
+</article>
+</div>
+
+
+
+<div class="resource-card__column">
+<article about="https://www.cvent.com/en/resource/hospitality/cvent-planner-pulse-emea" class="node node--type-resource resource--type-report node--view-mode-teaser">
+  <div class="category__color ungated-download-resource"></div>
+  <a class="resource-card-link" href="https://www.cvent.com/en/resource/hospitality/cvent-planner-pulse-emea">
+    <div class="resource__thumb al_overlay">
+            
+            <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__item">    <picture>
+                  <source media="all and (min-width: 1024px)" type="image/webp" width="600" height="360" data-srcset="/sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-01/pulse-survey.webp?h=22206566&amp;itok=dM-NTtaD 1x, /sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-01/pulse-survey.webp?h=22206566&amp;itok=dM-NTtaD 2x"/>
+              <source media="all and (min-width: 1024px)" type="image/png" width="600" height="360" data-srcset="/sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-01/pulse-survey.png?h=22206566&amp;itok=dM-NTtaD 1x, /sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-01/pulse-survey.png?h=22206566&amp;itok=dM-NTtaD 2x"/>
+                  <img loading="lazy" width="600" height="360" alt="pulse-survey-december" class="lazyload" data-src="/sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-01/pulse-survey.png?h=22206566&amp;itok=dM-NTtaD" typeof="foaf:Image" />
+
+  </picture>
+
+</div>
+      
+
+            <div class="category">
+        
+            <div class="field field--name-field-resource-type field--type-entity-reference field--label-hidden field__item">Report</div>
+      
+      </div>
+    </div>
+    <div class="node__content">
+      
+            <h2>
+        <span class="field field--name-title field--type-string field--label-hidden">EMEA Planner Pulse Report 2025</span>
+
+      </h2>
+      <span class="cta-link" href="https://www.cvent.com/en/resource/hospitality/cvent-planner-pulse-emea">Read more</span>
+      
+    </div>
+  </a>
+</article>
+</div>
+
+</div>
+
+          </div>
+  </div>
+</div>
+
+      
+
+
+<div id="cvent-paragraph-summary_blogs-1061856"  class="paragraph--id--1061856 paragraph paragraph--type--summary-blogs paragraph--view-mode--default">
+  
+  <h2 id="recommended-blogs" class="field heading field--name-field-summary-title field--type-string field--label-hidden field__item">Recommended blogs</h2>
+<div class="summary-output">
+  
+
+
+
+
+<article about="/en/blog/events/events-industry-vital-uk-economic-growth" class="node node--type--blog node--view-mode--teaser-extended">
+
+      <a href="/en/blog/events/events-industry-vital-uk-economic-growth" rel="bookmark">
+      
+<div class="field field--name-field-p-header field--type-entity-reference-revisions field--label-hidden field__items">
+      
+
+
+<div id="cvent-paragraph-header_banner_blog-1555086"  class="paragraph--id--1555086 paragraph paragraph--type--header-banner-blog paragraph--view-mode--teaser">
+  
+      <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__items">
+              <div class="field__item">    <picture>
+                  <source media="all and (min-width: 1024px)" type="image/webp" width="600" height="360" data-srcset="/sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/54148362312_d992b39214_c.webp?h=c9f93661&amp;itok=bXr0jL0L 1x, /sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/54148362312_d992b39214_c.webp?h=c9f93661&amp;itok=bXr0jL0L 2x"/>
+              <source media="all and (min-width: 1024px)" type="image/jpeg" width="600" height="360" data-srcset="/sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/54148362312_d992b39214_c.jpg?h=c9f93661&amp;itok=bXr0jL0L 1x, /sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/54148362312_d992b39214_c.jpg?h=c9f93661&amp;itok=bXr0jL0L 2x"/>
+                  <img loading="lazy" width="600" height="360" alt="Cvent Connect Europe 2024" class="lazyload" data-src="/sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/54148362312_d992b39214_c.jpg?h=c9f93661&amp;itok=bXr0jL0L" typeof="foaf:Image" />
+
+  </picture>
+
+</div>
+          </div>
+  
+</div>
+  </div>
+
+    </a>
+  
+  <div class="node__content">
+    
+<div class="field field--name-field-topics field--type-entity-reference field--label-hidden field__items">
+                                                <span class="field__item">
+              Events
+            </span>
+                                                                        <span class="field__item">
+              Headliner
+            </span>
+                                                                        <span class="field__item">
+              Featured
+            </span>
+                          </div>
+
+    
+    <h4>
+      <a href="/en/blog/events/events-industry-vital-uk-economic-growth" rel="bookmark"><span class="field field--name-title field--type-string field--label-hidden">The Events Industry is Vital for UK Economic Growth: Here’s Why</span>
+</a>
+    </h4>
+    
+          <div class="blog--author">By Mike Fletcher</div>
+        
+  </div>
+
+</article>
+
+
+
+
+
+<article about="/en/blog/destinations/find-out-whats-new-tempe-arizona-2" class="node node--type--blog node--view-mode--teaser-extended">
+
+      <a href="/en/blog/destinations/find-out-whats-new-tempe-arizona-2" rel="bookmark">
+      
+<div class="field field--name-field-p-header field--type-entity-reference-revisions field--label-hidden field__items">
+      
+
+
+<div id="cvent-paragraph-header_banner_blog-1553816"  class="paragraph--id--1553816 paragraph paragraph--type--header-banner-blog paragraph--view-mode--teaser">
+  
+      <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__items">
+              <div class="field__item">    <picture>
+                  <source media="all and (min-width: 1024px)" type="image/webp" width="600" height="360" data-srcset="/sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/Screenshot%202025-04-22%20120042%20%281%29.webp?h=ae1281eb&amp;itok=A5IITb55 1x, /sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/Screenshot%202025-04-22%20120042%20%281%29.webp?h=ae1281eb&amp;itok=A5IITb55 2x"/>
+              <source media="all and (min-width: 1024px)" type="image/png" width="600" height="360" data-srcset="/sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/Screenshot%202025-04-22%20120042%20%281%29.png?h=ae1281eb&amp;itok=A5IITb55 1x, /sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/Screenshot%202025-04-22%20120042%20%281%29.png?h=ae1281eb&amp;itok=A5IITb55 2x"/>
+                  <img loading="lazy" width="600" height="360" alt="1" class="lazyload" data-src="/sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/Screenshot%202025-04-22%20120042%20%281%29.png?h=ae1281eb&amp;itok=A5IITb55" typeof="foaf:Image" />
+
+  </picture>
+
+</div>
+          </div>
+  
+</div>
+  </div>
+
+    </a>
+  
+  <div class="node__content">
+    
+<div class="field field--name-field-topics field--type-entity-reference field--label-hidden field__items">
+                                                <span class="field__item">
+              Destinations
+            </span>
+                                                                        <span class="field__item">
+              Events
+            </span>
+                                                                        <span class="field__item">
+              Venue Sourcing
+            </span>
+                          </div>
+
+    
+    <h4>
+      <a href="/en/blog/destinations/find-out-whats-new-tempe-arizona-2" rel="bookmark"><span class="field field--name-title field--type-string field--label-hidden">Find out what&#039;s new in Tempe, Arizona</span>
+</a>
+    </h4>
+    
+          <div class="blog--author">By Featured Venues &amp; Destinations</div>
+        
+  </div>
+
+</article>
+
+
+
+
+
+<article about="/en/blog/destinations/small-steps-big-waves-atlantic-city-nj" class="node node--type--blog node--view-mode--teaser-extended">
+
+      <a href="/en/blog/destinations/small-steps-big-waves-atlantic-city-nj" rel="bookmark">
+      
+<div class="field field--name-field-p-header field--type-entity-reference-revisions field--label-hidden field__items">
+      
+
+
+<div id="cvent-paragraph-header_banner_blog-1553781"  class="paragraph--id--1553781 paragraph paragraph--type--header-banner-blog paragraph--view-mode--teaser">
+  
+      <div class="field field--name-field-image field--type-entity-reference field--label-hidden field__items">
+              <div class="field__item">    <picture>
+                  <source media="all and (min-width: 1024px)" type="image/webp" width="600" height="360" data-srcset="/sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/800x450.webp?h=ae1281eb&amp;itok=v1cP6UuV 1x, /sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/800x450.webp?h=ae1281eb&amp;itok=v1cP6UuV 2x"/>
+              <source media="all and (min-width: 1024px)" type="image/jpeg" width="600" height="360" data-srcset="/sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/800x450.jpg?h=ae1281eb&amp;itok=v1cP6UuV 1x, /sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/800x450.jpg?h=ae1281eb&amp;itok=v1cP6UuV 2x"/>
+                  <img loading="lazy" width="600" height="360" alt="1" class="lazyload" data-src="/sites/default/files/styles/focus_scale_and_crop_600x360/public/image/2025-04/800x450.jpg?h=ae1281eb&amp;itok=v1cP6UuV" typeof="foaf:Image" />
+
+  </picture>
+
+</div>
+          </div>
+  
+</div>
+  </div>
+
+    </a>
+  
+  <div class="node__content">
+    
+<div class="field field--name-field-topics field--type-entity-reference field--label-hidden field__items">
+                                                <span class="field__item">
+              Destinations
+            </span>
+                                                                        <span class="field__item">
+              Events
+            </span>
+                                                                        <span class="field__item">
+              Venue Sourcing
+            </span>
+                          </div>
+
+    
+    <h4>
+      <a href="/en/blog/destinations/small-steps-big-waves-atlantic-city-nj" rel="bookmark"><span class="field field--name-title field--type-string field--label-hidden">Small Steps, Big Waves in Atlantic City, NJ</span>
+</a>
+    </h4>
+    
+          <div class="blog--author">By Featured Venues &amp; Destinations</div>
+        
+  </div>
+
+</article>
+
+</div>
+
+</div>
+  </div>
+
+  </div>
+  </article>
+
+  </div>
+
+    </div>
+  </div>
+
+    </div>
+      </main>
+
+    <div class="region region-content-below">
+    <div class="wrapper">
+      
+    </div>
+  </div>
+
+
+  <footer role="contentinfo">
+    <div class="footer-top">
+                <div class="region region-footer-top">
+    <div class="wrapper">
+      <div id="block-footercta" class="block block-block-content block-block-contentf16d7624-eae1-4a96-ac86-af916a628b0e">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><div data-embed-button="image_embed" data-entity-embed-display="view_mode:media.entity_embed" data-entity-embed-display-settings="[]" data-entity-type="media" data-entity-uuid="128c4331-9ae2-49ec-a6c8-40a455671020" data-langcode="en" class="align-left embedded-entity"><article class="media media--type-image media--view-mode-entity-embed"><div class="field field--name-field-image field--type-image field--label-hidden field__item">  <img loading="lazy" width="119" height="23" alt="Cvent logo" class="lazyload image-style-column-content-width" data-src="/sites/default/files/styles/column_content_width/public/image/2023-04/logo-white.png.webp?itok=tW7gyo5v" typeof="foaf:Image" /></div>
+      
+  </article></div>
+</div>
+      
+  </div>
+<nav role="navigation" aria-labelledby="block-socialmenu-menu" id="block-socialmenu" class="block block-menu navigation menu--social-menu">
+            
+  <span  class="visually-hidden" id="block-socialmenu-menu">Social menu</span>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item">
+        <a href="http://www.facebook.com/cvent" target="_self" class="menu-item--facebook" title="Cvent on Facebook">Cvent on Facebook</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://twitter.com/cvent" target="_self" class="menu-item--twitter" title="Cvent on Twitter">Cvent on Twitter</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://www.linkedin.com/companies/cvent" target="_self" class="menu-item--linkedin" title="Cvent on LinkedIn">Cvent on LinkedIn</a>
+              </li>
+                <li class="menu-item">
+        <a href="http://www.youtube.com/user/CventVideo" target="_self" class="menu-item--youtube" title="Cvent on YouTube">Cvent on YouTube</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.instagram.com/cvent_inc/" target="_blank" class="menu-item--instagram" title="Cvent on Instagram">Cvent on Instagram</a>
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+    </div>
+  </div>
+
+                      <div class="region region-footer-middle">
+    <div class="wrapper">
+      <nav role="navigation" aria-labelledby="block-footerae-menu" id="block-footerae" class="block block-menu navigation menu--footer menu--footer-ae">
+            
+  <span  class="visually-hidden" id="block-footerae-menu">Footer (Middle East)</span>
+  
+
+        
+              <ul class="menu">
+                    <li class="menu-item menu-item--expanded">
+        <span target="_self" class="hide-submenu" title="Solutions">Sales</span>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="/en/request-demo" data-drupal-link-system-path="node/101846">Request a demo</a>
+              </li>
+                <li class="menu-item">
+        <a href="/en/event-management-software/cvent-pricing" data-drupal-link-system-path="node/124906">Pricing</a>
+              </li>
+                <li class="menu-item">
+        <a href="/en/contact-us" data-drupal-link-system-path="node/57281">Contact sales</a>
+              </li>
+                <li class="menu-item">
+        <a href="tel:971.4568.4914">971.4568.4914</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <span target="_self" class="hide-submenu">About</span>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="https://www.cvent.com/en/awards" target="_self">Awards</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://careers.cvent.com/" target="_blank">Careers</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.cvent.com/en/investor-relations">Investor relations</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.cvent.com/en/cvent-news-and-press-releases" target="_self" title="Newsroom">Newsroom</a>
+              </li>
+                <li class="menu-item">
+        <a href="/en/become-partner" target="_self" title="Partners" data-drupal-link-system-path="node/926">Partners</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <span class="hide-submenu">Popular products</span>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="/en/event-marketing-management/event-registration-software" target="_self" data-drupal-link-system-path="node/118776">Event registration</a>
+              </li>
+                <li class="menu-item">
+        <a href="/en/event-marketing-management/mobile-event-apps" data-drupal-link-system-path="node/118641">Mobile apps</a>
+              </li>
+                <li class="menu-item">
+        <a href="/en/event-marketing-management/attendee-hub" target="_self" data-drupal-link-system-path="node/118606">Attendee Hub</a>
+              </li>
+                <li class="menu-item">
+        <a href="/en/event-marketing-management/onarrival-event-check-in-software" data-drupal-link-system-path="node/118761">Check-in &amp; badging</a>
+              </li>
+                <li class="menu-item">
+        <a href="/en/event-marketing-management/webinar-platform" data-drupal-link-system-path="node/94161">Webinar platform</a>
+              </li>
+                <li class="menu-item">
+        <a href="/en/event-marketing-management/cvent-supplier-network" target="_self" data-drupal-link-system-path="node/118686">Venue Sourcing</a>
+              </li>
+                <li class="menu-item">
+        <a href="/en/products" target="_self" data-drupal-link-system-path="node/136431">All products</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <span target="_self" class="hide-submenu" title="Resources">Free resources</span>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="/en/blog" target="_self" title="Blog" data-drupal-link-system-path="node/28921">Blog</a>
+              </li>
+                <li class="menu-item">
+        <a href="/en/case-studies" target="_self" title="Case studies" data-drupal-link-system-path="node/3586">Case studies</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.cvent.com/live-events-calendar" target="_self" title="Events">Events</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.cvent.com/en/upcoming-webinars?field_event_type_target_id%5B46%5D=46">Watch webinars</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.cvent.com/venues/">Find event venues</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://www.cvent.com/meeting-event-planning">Best event venues</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <span target="_self" class="hide-submenu">Support</span>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="/en/contact/support" data-drupal-link-system-path="node/55646">Contact support</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://community.cvent.com/">Community</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://developers.cvent.com/" target="_self">Developer Hub</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://support.cvent.com/s/knowledgebase" target="_blank">Knowledge base</a>
+              </li>
+                <li class="menu-item">
+        <a href="/en/security" target="_self" title="Security" data-drupal-link-system-path="node/321">Security</a>
+              </li>
+                <li class="menu-item">
+        <a href="/en/academy" target="_self" title="Training" data-drupal-link-system-path="node/18096">Training</a>
+              </li>
+                <li class="menu-item">
+        <a href="https://app.cvent.com/">Log in to Cvent</a>
+              </li>
+        </ul>
+  
+              </li>
+                <li class="menu-item menu-item--expanded">
+        <span class="hide-submenu">For suppliers &amp; venues</span>
+                                <ul class="menu">
+                    <li class="menu-item">
+        <a href="/en/supplier-venue/group-marketing-solutions" target="_self" data-drupal-link-system-path="node/64091">Attract</a>
+              </li>
+                <li class="menu-item">
+        <a href="/en/supplier-venue/group-sales-solutions" target="_self" data-drupal-link-system-path="node/64101">Convert</a>
+              </li>
+                <li class="menu-item">
+        <a href="/en/supplier-venue/group-operations-solutions" target="_self" data-drupal-link-system-path="node/64106">Manage</a>
+              </li>
+                <li class="menu-item">
+        <a href="/en/supplier-venue/hotel-business-intelligence" data-drupal-link-system-path="node/118726">Improve</a>
+              </li>
+                <li class="menu-item">
+        <a href="/en/supplier-venue/business-travel-solutions" target="_self" data-drupal-link-system-path="node/64116">Corporate Travel</a>
+              </li>
+        </ul>
+  
+              </li>
+        </ul>
+  
+
+
+  </nav>
+
+    </div>
+  </div>
+
+          </div>
+            <div class="region region-footer-bottom">
+    <div class="wrapper">
+      <div id="block-copyright" class="block block-block-content block-block-content3b175a03-ffaf-4e3d-8462-4a9f139d7c37">
+  
+    
+      
+            <div class="clearfix text-formatted field field--name-body field--type-text-with-summary field--label-hidden field__item"><p>© Copyright 2025 Cvent Inc. All rights reserved.   <a href="/en/company/legal" data-entity-type="node" data-entity-uuid="15811026-4867-492c-bf59-3a9fad314e0e" data-entity-substitution="canonical">LEGAL</a>  |  <a href="/en/privacy-policy" data-entity-type="node" data-entity-uuid="f72453c7-8340-4c82-9eab-117ed3fde052" data-entity-substitution="canonical">PRIVACY POLICY</a>  |  <a href="/en/event-marketing-management/accessibility" data-entity-type="node" data-entity-uuid="f3999cbc-eb9b-44c4-be47-c0ada765611b" data-entity-substitution="canonical">ACCESSIBILITY </a>  |  <a href="/en/product-terms-of-use" data-entity-type="node" data-entity-uuid="7c8bfb12-b1cd-4a61-b3bd-ce7d1598aca8" data-entity-substitution="canonical">PRODUCT TERMS OF USE</a> |  <a href="/en/website-terms-use" data-entity-type="node" data-entity-uuid="02c45b56-6fd4-486c-aa09-e148aac12031" data-entity-substitution="canonical">WEBSITE TERMS OF USE</a>    <a href="https://www.cvent.com/personal-data-requests?ccpa=ca"><img alt="TRUSTe" class="lazyload" data-src="//www.cvent.com/sites/default/files/image/2024-02/CCPA%20icon%2029x20.png" />  YOUR PRIVACY CHOICES</a></p><p>This site is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply</p><p> </p><div><a href="//privacy.truste.com/privacy-seal/validation?rid=27cd9686-1974-453c-8589-f9a9722934d3" aria-label="TRUSTe APEC Privacy seal"><img alt="TRUSTe" class="lazyload" data-src="https://www.cvent.com/sites/default/files/image/2025-04/seal_APEC_en_m.png" /></a>   <a href="//privacy.truste.com/privacy-seal/validation?rid=ee5750cf-90ca-4784-b0ba-09ae26595ced" aria-label="TRUSTe APEC Processor seal"><img alt="TRUSTe" class="lazyload" data-src="https://www.cvent.com/sites/default/files/image/2025-04/seal_APECPRP_en_m.png" /></a></div></div>
+      
+  </div>
+<div id="block-regionswitcher" class="block block-cvent-region-redirect block-region-switcher-block">
+  
+    
+      <div class="region-switcher-main-wrapper switcher-closed"><div class="region-switcher-list-wrapper hidden item-list"><ul class="region-switcher-list"><li class="region-switcher-link"></li><li class="region-switcher-link"><a href="/de" data-active-text="Deutschland (Deutsch)" class="region-link skip-external" hreflang="de">Deutschland (Deutsch)</a></li></ul></div><div class="region-switcher-active-region"><a href="">US (English)</a></div>
+</div>
+<div class="region-redirect-reset-link hidden"><a href="">Reset redirect preference</a></div>
+<div class="modal-redirect-reset-wrapper mfp-hide"><div class="modal-redirect-reset-copy"></div>
+<a href="" class="clear-preference-link">Clear redirect preference</a></div>
+
+  </div>
+
+    </div>
+  </div>
+
+      </footer>
+
+</div>
+  </div>
+
+    <script>window.adobeDataLayer = window.adobeDataLayer || []; window.adobeDataLayer.push({"drupalLanguage":"en","drupalCountry":"US","siteName":"Cvent","entityCreated":"1523545252","entityLangcode":"en","entityType":"node","entityBundle":"landing_page","entityId":"9331","entityTitle":"404","entityTaxonomy":{"cloud":{"10511":"Cross Cloud"},"page_intent":{"11381":"Company"},"solution_list":{"11386":"Platform"}},"userUid":0,"regionConsolidation":{"actual_country":"KE","actual_region_name":"Middle East","country_code":"KE","region_name":"Middle East"},"pageUrl":"\/meta.json","pageTitle":"404 | Cvent"});</script>
+
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"en\/","currentPath":"","currentPathIsAdmin":false,"isFront":false,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"classy\/base,classy\/messages,classy\/node,codesnippet\/codesnippet.highlightjs,core\/Drupal,core\/normalize,cvent_custom_scripts\/alt_land_page_tools,cvent_custom_scripts\/dtm_body,cvent_custom_scripts\/utility-nav,cvent_notifications\/cvent_notifications,cvent_region_redirect\/region_switcher,datalayer\/behaviors,e3_marketo\/e3-marketo-munchkin,entity_embed\/caption,lazy\/lazy,paragraphs\/drupal.paragraphs.unpublished,social_media_links\/social_media_links.theme,stickynav\/stickynav,system\/base,themekit\/base,themekit\/fonts","theme":"themekit","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"dataLayer":{"defaultLang":"en","languages":{"en-AU":{"id":"en-AU","name":"Australia (English, en-AU)","direction":"ltr","weight":-10},"de":{"id":"de","name":"Deutschland (German, de)","direction":"ltr","weight":-9},"en":{"id":"en","name":"English (en)","direction":"ltr","weight":-8},"en-HK":{"id":"en-HK","name":"Hong Kong  (en-HK)","direction":"ltr","weight":-7},"en-IN":{"id":"en-IN","name":"India (en-IN)","direction":"ltr","weight":-6},"en-IL":{"id":"en-IL","name":"Israel (en-IL)","direction":"ltr","weight":-5},"en-JP":{"id":"en-JP","name":"Japan  (en-JP)","direction":"ltr","weight":-4},"en-KW":{"id":"en-KW","name":"Kuwait (en-KW)","direction":"ltr","weight":-3},"en-MY":{"id":"en-MY","name":"Malaysia  (en-MY)","direction":"ltr","weight":-2},"en-NZ":{"id":"en-NZ","name":"New Zealand (en-NZ)","direction":"ltr","weight":-1},"en-QA":{"id":"en-QA","name":"Qatar (en-QA)","direction":"ltr","weight":0},"en-SA":{"id":"en-SA","name":"Saudi Arabia (en-SA)","direction":"ltr","weight":1},"en-SG":{"id":"en-SG","name":"Singapore (English, en-SG)","direction":"ltr","weight":2},"en-ZA":{"id":"en-ZA","name":"South Africa (en-ZA)","direction":"ltr","weight":3},"en-TH":{"id":"en-TH","name":"Thailand  (en-TH)","direction":"ltr","weight":4},"en-US":{"id":"en-US","name":"United States (English, en-US)","direction":"ltr","weight":5},"en-GB":{"id":"en-GB","name":"United Kingdom (English, en-GB)","direction":"ltr","weight":6},"en-AE":{"id":"en-AE","name":"United Arab Emirates (English, en-AE)","direction":"ltr","weight":7},"hi":{"id":"hi","name":"Hindi","direction":"ltr","weight":8}}},"marketoForms":{"munchkinId":"006-LRT-285"},"lazy":{"lazysizes":{"lazyClass":"lazyload","loadedClass":"lazyloaded","loadingClass":"lazyloading","preloadClass":"lazypreload","errorClass":"lazyerror","autosizesClass":"lazyautosizes","srcAttr":"data-src","srcsetAttr":"data-srcset","sizesAttr":"data-sizes","minSize":40,"customMedia":[],"init":true,"expFactor":1.5,"hFac":0.80000000000000004,"loadMode":2,"loadHidden":true,"ricTimeout":0,"throttleDelay":125,"plugins":[]},"placeholderSrc":"","preferNative":false,"minified":false,"libraryPath":"\/libraries\/lazysizes"},"stickynav":{"selector":".secondary-nav-cta-scroll","offsets":{"selector":"","custom_offset":null}},"clearRedirectSettings":{"accept":"You are currently being automatically redirected to the version of the site appropriate for your region.","decline":"You are currently blocking all automatic redirects to the version of the site appropriate for your region."},"node_edit_route":false,"cventNotifications":{"notificationWrapper":".notifications-ajax-wrapper","contentType":"landing_page","overlayWrapper":".exit-overlays-wrapper","contentPath":"\/meta.json"},"is_content_track":false,"region_consolidation":{"actual_country":"KE","actual_region_name":"Middle East","country_code":"KE","region_name":"Middle East","current_region_tid":"6166","current_langcode":"en"},"user":{"uid":0,"permissionsHash":"5aa701d9511dab33570c43b44a93fdea6997b5e8b7a9c6f3f3281ee9d04052b9"}}</script>
+<script src="/sites/default/files/js/js_Y_7vYQWytid4C3gqdjGmVpy5VSKHl11riHrhrN9rSkY.js?scope=footer&amp;delta=0&amp;language=en&amp;theme=themekit&amp;include=eJx1UFtywyAMvBA2H7lC78HIoBjFgBgkp-OcPiRxPek0_QBWix6rDaCQYMNmJ4xwJW5iPDe0Fxk880L4CkNbK6SxNp4bihg8uQxtQWWLp2GHQ16LjwsVk-C22cdlhD1BchkDgUtUFrF_qVEjZjSi5JetwNUeyMgmitlOIF1JApHtF85dDMy4iy7cMiS67aK_nqLNs_lC-io8ojMX7XVXLOoazsSlP4EaerV7LN-kPmIzZ0raPfJQtfOml5BuDvOE4SArNJgb1CiHWwczrqWuUyKJGH6kFw64j_erKGcnvlFVsatS6v2Hx_6vhMJKZ_LwGCT2A9cXDiiFakW1b3iMNMfUj17kzQi60ZT-mR40u4nD9vkXkroEJbjabXfKnOQOygbknw"></script>
+
+  </body>
+</html>
