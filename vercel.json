@@ -8,10 +8,6 @@
   ],
   "rewrites": [
     {
-      "source": "/(.*)",
-      "destination": "/www.cvent.com/$1"
-    },
-    {
       "source": "/",
       "destination": "/www.cvent.com/index.html"
     },
@@ -30,6 +26,10 @@
     {
       "source": "/create-admin",
       "destination": "/www.cvent.com/create-admin.html"
+    },
+    {
+      "source": "/www.cvent.com/(.*)",
+      "destination": "/www.cvent.com/$1"
     }
   ],
   "headers": [
