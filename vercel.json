@@ -8,27 +8,7 @@
   ],
   "rewrites": [
     {
-      "source": "/",
-      "destination": "/www.cvent.com/index.html"
-    },
-    {
-      "source": "/login",
-      "destination": "/www.cvent.com/login.html"
-    },
-    {
-      "source": "/admin",
-      "destination": "/www.cvent.com/admin.html"
-    },
-    {
-      "source": "/dashboard",
-      "destination": "/www.cvent.com/dashboard.html"
-    },
-    {
-      "source": "/create-admin",
-      "destination": "/www.cvent.com/create-admin.html"
-    },
-    {
-      "source": "/www.cvent.com/(.*)",
+      "source": "/(.*)",
       "destination": "/www.cvent.com/$1"
     }
   ],
@@ -47,15 +27,6 @@
         {
           "key": "X-XSS-Protection",
           "value": "1; mode=block"
-        }
-      ]
-    },
-    {
-      "source": "/www.cvent.com/images/(.*)",
-      "headers": [
-        {
-          "key": "Cache-Control",
-          "value": "public, max-age=31536000, immutable"
         }
       ]
     }
