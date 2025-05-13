@@ -6,30 +6,30 @@
       "use": "@vercel/static"
     }
   ],
-  "routes": [
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "/www.cvent.com/$1"
+      "source": "/(.*)",
+      "destination": "/www.cvent.com/$1"
     },
     {
-      "src": "/",
-      "dest": "/www.cvent.com/index.html"
+      "source": "/",
+      "destination": "/www.cvent.com/index.html"
     },
     {
-      "src": "/login",
-      "dest": "/www.cvent.com/login.html"
+      "source": "/login",
+      "destination": "/www.cvent.com/login.html"
     },
     {
-      "src": "/admin",
-      "dest": "/www.cvent.com/admin.html"
+      "source": "/admin",
+      "destination": "/www.cvent.com/admin.html"
     },
     {
-      "src": "/dashboard",
-      "dest": "/www.cvent.com/dashboard.html"
+      "source": "/dashboard",
+      "destination": "/www.cvent.com/dashboard.html"
     },
     {
-      "src": "/create-admin",
-      "dest": "/www.cvent.com/create-admin.html"
+      "source": "/create-admin",
+      "destination": "/www.cvent.com/create-admin.html"
     }
   ],
   "headers": [
