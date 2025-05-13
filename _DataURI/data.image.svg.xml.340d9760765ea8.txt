@@ -1,0 +1,1 @@
+data:image/svg+xml;charset=utf8,%3Csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 12 12' style='enable-background:new 0 0 12 12;' xml:space='preserve'%3E%3Cpolygon fill='%23149fda' points='0,2.2 12,2.2 6,10.2 '/%3E%3C/svg%3E

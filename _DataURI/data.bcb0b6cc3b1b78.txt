@@ -1,0 +1,1 @@
+chrome-extension://mmeijimgabbpbgpdklnllpncmdofkcpn/quick-record-script.js

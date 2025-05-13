@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard | CueBetween</title>
+    <link rel="stylesheet" href="/themes/custom/themekit/css/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="/sites/default/files/css/css_6_4rMV5fph69jK4iupDsynGSDzWe01mrBtXSLtXu2I8.css"
+    />
+  </head>
+  <body
+    style="
+      background: linear-gradient(120deg, #f6fafd 0%, #e9f1fa 100%);
+      min-height: 100vh;
+    "
+  >
+    <!-- Header/Navbar copied from index.html for consistency -->
+    <header role="banner">
+      <div class="region region-header-top">
+        <div class="wrapper">
+          <div
+            id="block-themekit-branding"
+            class="block block-system block-system-branding-block"
+          >
+            <a
+              href="/"
+              rel="home"
+              class="site-logo"
+              aria-label="CueBetween home"
+            >
+              <div
+                style="
+                  height: 60px;
+                  width: auto;
+                  overflow: hidden;
+                  display: inline-block;
+                "
+              >
+                <img
+                  src="/themes/custom/themekit/images/Cue.png"
+                  alt="CueBetween Logo"
+                  style="
+                    height: 190px;
+                    width: auto;
+                    margin-top: -60px;
+                    display: block;
+                  "
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="skip-location-content">
+      <div class="wrapper" style="max-width: 900px; margin: 48px auto 0 auto">
+        <div
+          style="
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: center;
+            align-items: flex-start;
+          "
+        >
+          <div
+            style="
+              flex: 1 1 340px;
+              min-width: 320px;
+              max-width: 420px;
+              background: #fff;
+              border-radius: 18px;
+              box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+              padding: 40px 32px 32px 32px;
+            "
+          >
+            <h2
+              id="welcome-msg"
+              style="
+                margin-bottom: 18px;
+                font-size: 2rem;
+                font-weight: 700;
+                color: #222;
+              "
+            >
+              Welcome!
+            </h2>
+            <section style="margin-bottom: 32px">
+              <h3
+                style="
+                  font-size: 1.2rem;
+                  font-weight: 600;
+                  color: #0098e3;
+                  margin-bottom: 12px;
+                "
+              >
+                Your Inquiries
+              </h3>
+              <div id="inquiries-list" style="margin-top: 10px"></div>
+            </section>
+            <section style="margin-bottom: 32px">
+              <h3
+                style="
+                  font-size: 1.2rem;
+                  font-weight: 600;
+                  color: #0098e3;
+                  margin-bottom: 12px;
+                "
+              >
+                Submit a New Inquiry
+              </h3>
+              <form id="inquiry-form">
+                <div style="margin-bottom: 14px">
+                  <input
+                    type="text"
+                    id="inq-subject"
+                    placeholder="Subject"
+                    class="form-search"
+                    required
+                    style="
+                      width: 100%;
+                      padding: 12px 14px;
+                      border: 1.5px solid #e0e6ed;
+                      border-radius: 7px;
+                      font-size: 1rem;
+                      outline: none;
+                      transition: border 0.2s;
+                    "
+                  />
+                </div>
+                <div style="margin-bottom: 14px">
+                  <textarea
+                    id="inq-message"
+                    placeholder="Message"
+                    class="form-search"
+                    required
+                    style="
+                      width: 100%;
+                      padding: 12px 14px;
+                      border: 1.5px solid #e0e6ed;
+                      border-radius: 7px;
+                      font-size: 1rem;
+                      outline: none;
+                      transition: border 0.2s;
+                      min-height: 80px;
+                    "
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  class="button"
+                  style="
+                    width: 100%;
+                    padding: 12px 0;
+                    font-size: 1.08rem;
+                    font-weight: 600;
+                    border-radius: 7px;
+                    background: #0098e3;
+                    color: #fff;
+                  "
+                >
+                  Submit Inquiry
+                </button>
+              </form>
+              <div
+                id="inquiry-success"
+                style="color: green; margin-top: 8px"
+              ></div>
+            </section>
+          </div>
+          <div
+            style="
+              flex: 1 1 340px;
+              min-width: 320px;
+              max-width: 420px;
+              background: #fff;
+              border-radius: 18px;
+              box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+              padding: 40px 32px 32px 32px;
+            "
+          >
+            <h3
+              style="
+                font-size: 1.2rem;
+                font-weight: 600;
+                color: #0098e3;
+                margin-bottom: 12px;
+              "
+            >
+              Update Profile
+            </h3>
+            <form id="profile-form">
+              <div style="margin-bottom: 14px">
+                <input
+                  type="text"
+                  id="profile-name"
+                  placeholder="Full Name"
+                  class="form-search"
+                  required
+                  style="
+                    width: 100%;
+                    padding: 12px 14px;
+                    border: 1.5px solid #e0e6ed;
+                    border-radius: 7px;
+                    font-size: 1rem;
+                    outline: none;
+                    transition: border 0.2s;
+                  "
+                />
+              </div>
+              <div style="margin-bottom: 14px">
+                <input
+                  type="email"
+                  id="profile-email"
+                  placeholder="Email"
+                  class="form-search"
+                  required
+                  style="
+                    width: 100%;
+                    padding: 12px 14px;
+                    border: 1.5px solid #e0e6ed;
+                    border-radius: 7px;
+                    font-size: 1rem;
+                    outline: none;
+                    transition: border 0.2s;
+                  "
+                />
+              </div>
+              <div style="margin-bottom: 14px">
+                <input
+                  type="password"
+                  id="profile-password"
+                  placeholder="New Password (leave blank to keep current)"
+                  class="form-search"
+                  style="
+                    width: 100%;
+                    padding: 12px 14px;
+                    border: 1.5px solid #e0e6ed;
+                    border-radius: 7px;
+                    font-size: 1rem;
+                    outline: none;
+                    transition: border 0.2s;
+                  "
+                />
+              </div>
+              <button
+                type="submit"
+                class="button"
+                style="
+                  width: 100%;
+                  padding: 12px 0;
+                  font-size: 1.08rem;
+                  font-weight: 600;
+                  border-radius: 7px;
+                  background: #0098e3;
+                  color: #fff;
+                "
+              >
+                Update Profile
+              </button>
+            </form>
+            <div
+              id="profile-success"
+              style="color: green; margin-top: 8px"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module">
+      import { supabase } from "./config/supabase.js";
+      let user, profile;
+      async function getUserProfile() {
+        const {
+          data: { user: u },
+          error: userErr,
+        } = await supabase.auth.getUser();
+        if (!u) {
+          window.location.href = "/login.html";
+          return;
+        }
+        user = u;
+        const { data: p } = await supabase
+          .from("profiles")
+          .select("*")
+          .eq("id", user.id)
+          .single();
+        profile = p;
+        document.getElementById("welcome-msg").textContent = `Welcome, ${
+          profile.name || profile.email
+        }!`;
+        document.getElementById("profile-name").value = profile.name || "";
+        document.getElementById("profile-email").value = profile.email || "";
+        loadInquiries();
+      }
+      async function loadInquiries() {
+        const { data: inquiries } = await supabase
+          .from("contact_messages")
+          .select("*")
+          .eq("user_id", user.id)
+          .order("created_at", { ascending: false });
+        const list = document.getElementById("inquiries-list");
+        if (!inquiries || inquiries.length === 0) {
+          list.innerHTML = "<p style='color:#888;'>No inquiries yet.</p>";
+          return;
+        }
+        list.innerHTML = inquiries
+          .map(
+            (msg) => `
+        <div style="border:1.5px solid #e0e6ed;padding:14px 16px;margin-bottom:12px;border-radius:8px;background:#f8fafc;">
+          <div style="font-weight:600;color:#222;">${msg.subject}</div>
+          <div style="margin:6px 0 8px 0;color:#444;">${msg.message}</div>
+          <div style="font-size:12px;color:#888;">${new Date(
+            msg.created_at
+          ).toLocaleString()}</div>
+        </div>
+      `
+          )
+          .join("");
+      }
+      document.getElementById("inquiry-form").onsubmit = async (e) => {
+        e.preventDefault();
+        const subject = document.getElementById("inq-subject").value;
+        const message = document.getElementById("inq-message").value;
+        const { error } = await supabase.from("contact_messages").insert([
+          {
+            user_id: user.id,
+            name: profile.name,
+            email: profile.email,
+            subject,
+            message,
+          },
+        ]);
+        if (!error) {
+          document.getElementById("inquiry-success").textContent =
+            "Inquiry submitted!";
+          document.getElementById("inq-subject").value = "";
+          document.getElementById("inq-message").value = "";
+          loadInquiries();
+        }
+      };
+      document.getElementById("profile-form").onsubmit = async (e) => {
+        e.preventDefault();
+        const name = document.getElementById("profile-name").value;
+        const email = document.getElementById("profile-email").value;
+        const password = document.getElementById("profile-password").value;
+        let updateErr = null;
+        // Update profile table
+        const { error: profileErr } = await supabase
+          .from("profiles")
+          .update({ name, email })
+          .eq("id", user.id);
+        if (profileErr) updateErr = profileErr;
+        // Update auth email
+        if (email !== profile.email) {
+          const { error: authErr } = await supabase.auth.updateUser({ email });
+          if (authErr) updateErr = authErr;
+        }
+        // Update password if provided
+        if (password) {
+          const { error: passErr } = await supabase.auth.updateUser({
+            password,
+          });
+          if (passErr) updateErr = passErr;
+        }
+        if (!updateErr) {
+          document.getElementById("profile-success").textContent =
+            "Profile updated!";
+          getUserProfile();
+          document.getElementById("profile-password").value = "";
+        }
+      };
+      getUserProfile();
+    </script>
+  </body>
+</html>

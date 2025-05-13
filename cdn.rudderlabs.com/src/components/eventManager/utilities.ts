@@ -1,0 +1,347 @@
+import { clone } from 'ramda';
+import { isString, isUndefined } from '@rudderstack/analytics-js-common/utilities/checks';
+import type { ApiObject } from '@rudderstack/analytics-js-common/types/ApiObject';
+import type { Nullable } from '@rudderstack/analytics-js-common/types/Nullable';
+import type { ApiOptions } from '@rudderstack/analytics-js-common/types/EventApi';
+import type { RudderContext, RudderEvent } from '@rudderstack/analytics-js-common/types/Event';
+import type { ILogger } from '@rudderstack/analytics-js-common/types/Logger';
+import type { IntegrationOpts } from '@rudderstack/analytics-js-common/types/Integration';
+import {
+  isNonEmptyObject,
+  isObjectLiteralAndNotNull,
+  mergeDeepRight,
+} from '@rudderstack/analytics-js-common/utilities/object';
+import { EVENT_MANAGER } from '@rudderstack/analytics-js-common/constants/loggerContexts';
+import { generateUUID } from '@rudderstack/analytics-js-common/utilities/uuId';
+import { getCurrentTimeFormatted } from '@rudderstack/analytics-js-common/utilities/timestamp';
+import { NO_STORAGE } from '@rudderstack/analytics-js-common/constants/storages';
+import { DEFAULT_INTEGRATIONS_CONFIG } from '@rudderstack/analytics-js-common/constants/integrationsConfig';
+import type { StorageType } from '@rudderstack/analytics-js-common/types/Storage';
+import { state } from '../../state';
+import {
+  INVALID_CONTEXT_OBJECT_WARNING,
+  RESERVED_KEYWORD_WARNING,
+} from '../../constants/logMessages';
+import {
+  CHANNEL,
+  CONTEXT_RESERVED_ELEMENTS,
+  RESERVED_ELEMENTS,
+  TOP_LEVEL_ELEMENTS,
+} from './constants';
+import { getDefaultPageProperties } from '../utilities/page';
+import { extractUTMParameters } from '../utilities/url';
+import { generateAnonymousId, isStorageTypeValidForStoringData } from '../userSessionManager/utils';
+
+/**
+ * To get the page properties for context object
+ * @param pageProps Page properties
+ * @returns page properties object for context
+ */
+const getContextPageProperties = (pageProps?: ApiObject): ApiObject => {
+  // Need to get updated page details on each event as an event to notify on SPA URL changes does not seem to exist
+  const curPageProps = getDefaultPageProperties();
+
+  const ctxPageProps: ApiObject = {};
+  Object.keys(curPageProps).forEach((key: string) => {
+    ctxPageProps[key] = pageProps?.[key] || curPageProps[key];
+  });
+
+  ctxPageProps.initial_referrer =
+    pageProps?.initial_referrer || state.session.initialReferrer.value;
+
+  ctxPageProps.initial_referring_domain =
+    pageProps?.initial_referring_domain || state.session.initialReferringDomain.value;
+  return ctxPageProps;
+};
+
+/**
+ * Add any missing default page properties using values from options and defaults
+ * @param properties Input page properties
+ * @param options API options
+ */
+const getUpdatedPageProperties = (
+  properties: ApiObject,
+  options?: Nullable<ApiOptions>,
+): ApiObject => {
+  const optionsPageProps = ((options as ApiOptions)?.page as ApiObject) || {};
+  const pageProps = properties;
+
+  // Need to get updated page details on each event as an event to notify on SPA URL changes does not seem to exist
+  const curPageProps = getDefaultPageProperties();
+
+  Object.keys(curPageProps).forEach((key: string) => {
+    if (isUndefined(pageProps[key])) {
+      pageProps[key] = optionsPageProps[key] || curPageProps[key];
+    }
+  });
+
+  if (isUndefined(pageProps.initial_referrer)) {
+    pageProps.initial_referrer =
+      optionsPageProps.initial_referrer || state.session.initialReferrer.value;
+  }
+
+  if (isUndefined(pageProps.initial_referring_domain)) {
+    pageProps.initial_referring_domain =
+      optionsPageProps.initial_referring_domain || state.session.initialReferringDomain.value;
+  }
+
+  return pageProps;
+};
+
+/**
+ * Utility to check for reserved keys in the input object
+ * @param obj Generic object
+ * @param parentKeyPath Object's parent key path
+ * @param logger Logger instance
+ */
+const checkForReservedElementsInObject = (
+  obj: Nullable<ApiObject> | RudderContext | undefined,
+  parentKeyPath: string,
+  logger: ILogger,
+): void => {
+  if (isObjectLiteralAndNotNull(obj)) {
+    Object.keys(obj as object).forEach(property => {
+      if (
+        RESERVED_ELEMENTS.includes(property) ||
+        RESERVED_ELEMENTS.includes(property.toLowerCase())
+      ) {
+        logger.warn(
+          RESERVED_KEYWORD_WARNING(EVENT_MANAGER, property, parentKeyPath, RESERVED_ELEMENTS),
+        );
+      }
+    });
+  }
+};
+
+/**
+ * Checks for reserved keys in traits, properties, and contextual traits
+ * @param rudderEvent Generated rudder event
+ * @param logger Logger instance
+ */
+const checkForReservedElements = (rudderEvent: RudderEvent, logger: ILogger): void => {
+  //  properties, traits, contextualTraits are either undefined or object
+  const { properties, traits, context } = rudderEvent;
+  const { traits: contextualTraits } = context;
+
+  checkForReservedElementsInObject(properties, 'properties', logger);
+  checkForReservedElementsInObject(traits, 'traits', logger);
+  checkForReservedElementsInObject(contextualTraits, 'context.traits', logger);
+};
+
+/**
+ * Overrides the top-level event properties with data from API options
+ * @param rudderEvent Generated rudder event
+ * @param options API options
+ */
+const updateTopLevelEventElements = (rudderEvent: RudderEvent, options: ApiOptions): void => {
+  if (options.anonymousId && isString(options.anonymousId)) {
+    // eslint-disable-next-line no-param-reassign
+    rudderEvent.anonymousId = options.anonymousId;
+  }
+
+  if (isNonEmptyObject<IntegrationOpts>(options.integrations)) {
+    // eslint-disable-next-line no-param-reassign
+    rudderEvent.integrations = options.integrations;
+  }
+
+  if (options.originalTimestamp && isString(options.originalTimestamp)) {
+    // eslint-disable-next-line no-param-reassign
+    rudderEvent.originalTimestamp = options.originalTimestamp;
+  }
+};
+
+/**
+ * To merge the contextual information in API options with existing data
+ * @param rudderContext Generated rudder event
+ * @param options API options
+ * @param logger Logger instance
+ */
+const getMergedContext = (
+  rudderContext: RudderContext,
+  options: ApiOptions,
+  logger: ILogger,
+): RudderContext => {
+  let context = rudderContext;
+  Object.keys(options).forEach(key => {
+    if (!TOP_LEVEL_ELEMENTS.includes(key) && !CONTEXT_RESERVED_ELEMENTS.includes(key)) {
+      if (key !== 'context') {
+        context = mergeDeepRight(context, {
+          [key]: options[key],
+        });
+      } else if (!isUndefined(options[key]) && isObjectLiteralAndNotNull(options[key])) {
+        const tempContext: Record<string, any> = {};
+        Object.keys(options[key] as Record<string, any>).forEach(e => {
+          if (!CONTEXT_RESERVED_ELEMENTS.includes(e)) {
+            tempContext[e] = (options[key] as Record<string, any>)[e];
+          }
+        });
+        context = mergeDeepRight(context, {
+          ...tempContext,
+        });
+      } else {
+        logger.warn(INVALID_CONTEXT_OBJECT_WARNING(EVENT_MANAGER));
+      }
+    }
+  });
+  return context;
+};
+
+/**
+ * Updates rudder event object with data from the API options
+ * @param rudderEvent Generated rudder event
+ * @param options API options
+ */
+const processOptions = (
+  rudderEvent: RudderEvent,
+  options: Nullable<ApiOptions> | undefined,
+  logger: ILogger,
+): void => {
+  // Only allow object type for options
+  if (isObjectLiteralAndNotNull(options)) {
+    updateTopLevelEventElements(rudderEvent, options as ApiOptions);
+    // eslint-disable-next-line no-param-reassign
+    rudderEvent.context = getMergedContext(rudderEvent.context, options as ApiOptions, logger);
+  }
+};
+
+/**
+ * Returns the final integrations config for the event based on the global config and event's config
+ * @param integrationsConfig Event's integrations config
+ * @returns Final integrations config
+ */
+const getEventIntegrationsConfig = (integrationsConfig?: IntegrationOpts) => {
+  let finalIntgConfig: IntegrationOpts;
+  if (state.loadOptions.value.useGlobalIntegrationsConfigInEvents) {
+    // Prefer the integrations object from the consent API response over the load API integrations object
+    finalIntgConfig =
+      state.consents.postConsent.value.integrations ??
+      state.nativeDestinations.loadOnlyIntegrations.value;
+  } else if (integrationsConfig) {
+    finalIntgConfig = integrationsConfig;
+  } else {
+    finalIntgConfig = DEFAULT_INTEGRATIONS_CONFIG;
+  }
+  return clone(finalIntgConfig);
+};
+
+/**
+ * Enrich the base event object with data from state and the API options
+ * @param rudderEvent RudderEvent object
+ * @param options API options
+ * @param pageProps Page properties
+ * @param logger logger
+ * @returns Enriched RudderEvent object
+ */
+const getEnrichedEvent = (
+  rudderEvent: Partial<RudderEvent>,
+  options: Nullable<ApiOptions> | undefined,
+  pageProps: ApiObject | undefined,
+  logger: ILogger,
+): RudderEvent => {
+  const commonEventData = {
+    channel: CHANNEL,
+    context: {
+      traits: clone(state.session.userTraits.value),
+      sessionId: state.session.sessionInfo.value.id || undefined,
+      sessionStart: state.session.sessionInfo.value.sessionStart || undefined,
+      // Add 'consentManagement' only if consent management is enabled
+      ...(state.consents.enabled.value && {
+        consentManagement: {
+          deniedConsentIds: clone(state.consents.data.value.deniedConsentIds),
+          allowedConsentIds: clone(state.consents.data.value.allowedConsentIds),
+          provider: state.consents.provider.value,
+          resolutionStrategy: state.consents.resolutionStrategy.value,
+        },
+      }),
+      'ua-ch': state.context['ua-ch'].value,
+      app: state.context.app.value,
+      library: state.context.library.value,
+      userAgent: state.context.userAgent.value,
+      os: state.context.os.value,
+      locale: state.context.locale.value,
+      screen: state.context.screen.value,
+      campaign: extractUTMParameters(globalThis.location.href),
+      page: getContextPageProperties(pageProps),
+      timezone: state.context.timezone.value,
+      // Add auto tracking information
+      ...(state.autoTrack.enabled.value && {
+        autoTrack: {
+          ...(state.autoTrack.pageLifecycle.enabled.value && {
+            page: {
+              pageViewId: state.autoTrack.pageLifecycle.pageViewId.value,
+            },
+          }),
+        },
+      }),
+    },
+    originalTimestamp: getCurrentTimeFormatted(),
+    messageId: generateUUID(),
+    userId: rudderEvent.userId || state.session.userId.value,
+  } as Partial<RudderEvent>;
+
+  if (
+    !isStorageTypeValidForStoringData(state.storage.entries.value.anonymousId?.type as StorageType)
+  ) {
+    // Generate new anonymous id for each request
+    commonEventData.anonymousId = generateAnonymousId();
+  } else {
+    // Type casting to string as the user session manager will take care of initializing the value
+    commonEventData.anonymousId = state.session.anonymousId.value as string;
+  }
+
+  // set truly anonymous tracking flag
+  if (state.storage.trulyAnonymousTracking.value) {
+    (commonEventData.context as RudderContext).trulyAnonymousTracking = true;
+  }
+
+  if (rudderEvent.type === 'identify') {
+    (commonEventData.context as RudderContext).traits =
+      state.storage.entries.value.userTraits?.type !== NO_STORAGE
+        ? clone(state.session.userTraits.value)
+        : (rudderEvent.context as RudderContext).traits;
+  }
+
+  if (rudderEvent.type === 'group') {
+    if (rudderEvent.groupId || state.session.groupId.value) {
+      commonEventData.groupId = rudderEvent.groupId || state.session.groupId.value;
+    }
+
+    if (rudderEvent.traits || state.session.groupTraits.value) {
+      commonEventData.traits =
+        state.storage.entries.value.groupTraits?.type !== NO_STORAGE
+          ? clone(state.session.groupTraits.value)
+          : rudderEvent.traits;
+    }
+  }
+
+  const processedEvent = mergeDeepRight(rudderEvent, commonEventData) as RudderEvent;
+  // Set the default values for the event properties
+  // matching with v1.1 payload
+  if (processedEvent.event === undefined) {
+    processedEvent.event = null;
+  }
+
+  if (processedEvent.properties === undefined) {
+    processedEvent.properties = null;
+  }
+
+  processOptions(processedEvent, options, logger);
+  checkForReservedElements(processedEvent, logger);
+
+  // Update the integrations config for the event
+  processedEvent.integrations = getEventIntegrationsConfig(processedEvent.integrations);
+
+  return processedEvent;
+};
+
+export {
+  getUpdatedPageProperties,
+  getEnrichedEvent,
+  checkForReservedElements,
+  checkForReservedElementsInObject,
+  updateTopLevelEventElements,
+  getContextPageProperties,
+  getMergedContext,
+  processOptions,
+  getEventIntegrationsConfig, // For testing
+};

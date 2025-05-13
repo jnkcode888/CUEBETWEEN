@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | CueBetween</title>
+    <link rel="stylesheet" href="/themes/custom/themekit/css/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="/sites/default/files/css/css_6_4rMV5fph69jK4iupDsynGSDzWe01mrBtXSLtXu2I8.css"
+    />
+  </head>
+  <body
+    style="
+      background: linear-gradient(120deg, #f6fafd 0%, #e9f1fa 100%);
+      min-height: 100vh;
+    "
+  >
+    <!-- Header/Navbar copied from index.html for consistency -->
+    <header role="banner">
+      <div class="region region-header-top">
+        <div class="wrapper">
+          <div
+            id="block-themekit-branding"
+            class="block block-system block-system-branding-block"
+          >
+            <a
+              href="/"
+              rel="home"
+              class="site-logo"
+              aria-label="CueBetween home"
+            >
+              <div
+                style="
+                  height: 60px;
+                  width: auto;
+                  overflow: hidden;
+                  display: inline-block;
+                "
+              >
+                <img
+                  src="/themes/custom/themekit/images/Cue.png"
+                  alt="CueBetween Logo"
+                  style="
+                    height: 190px;
+                    width: auto;
+                    margin-top: -60px;
+                    display: block;
+                  "
+                />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main id="skip-location-content">
+      <div
+        class="wrapper"
+        style="
+          min-height: 80vh;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        "
+      >
+        <div
+          class="login-card"
+          style="
+            max-width: 420px;
+            width: 100%;
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            padding: 48px 36px 36px 36px;
+          "
+        >
+          <div style="text-align: center; margin-bottom: 32px">
+            <img
+              src="/themes/custom/themekit/images/Cue.png"
+              alt="CueBetween Logo"
+              style="
+                height: 190px;
+                width: auto;
+                margin: -40px auto 0 auto;
+                display: block;
+              "
+            />
+
+            <h2
+              style="
+                margin: 0;
+                font-size: 2.1rem;
+                font-weight: 700;
+                letter-spacing: -1px;
+                color: #222;
+              "
+            >
+              Sign in to your account
+            </h2>
+            <p style="color: #6c7a89; font-size: 1.08rem; margin-top: 10px">
+              Welcome back! Please login or sign up to continue.
+            </p>
+          </div>
+          <form id="login-form" autocomplete="on" style="transition: all 0.2s">
+            <div style="margin-bottom: 18px">
+              <label
+                for="login-email"
+                style="
+                  font-weight: 500;
+                  color: #333;
+                  display: block;
+                  margin-bottom: 6px;
+                "
+              >
+                Email
+              </label>
+              <input
+                type="email"
+                id="login-email"
+                placeholder="Email"
+                class="form-search"
+                required
+                style="
+                  width: 100%;
+                  padding: 12px 14px;
+                  border: 1.5px solid #e0e6ed;
+                  border-radius: 7px;
+                  font-size: 1rem;
+                  outline: none;
+                  transition: border 0.2s;
+                "
+              />
+            </div>
+            <div style="margin-bottom: 18px">
+              <label
+                for="login-password"
+                style="
+                  font-weight: 500;
+                  color: #333;
+                  display: block;
+                  margin-bottom: 6px;
+                "
+              >
+                Password
+              </label>
+              <input
+                type="password"
+                id="login-password"
+                placeholder="Password"
+                class="form-search"
+                required
+                style="
+                  width: 100%;
+                  padding: 12px 14px;
+                  border: 1.5px solid #e0e6ed;
+                  border-radius: 7px;
+                  font-size: 1rem;
+                  outline: none;
+                  transition: border 0.2s;
+                "
+              />
+            </div>
+            <button
+              type="submit"
+              class="button"
+              style="
+                width: 100%;
+                margin-bottom: 16px;
+                padding: 12px 0;
+                font-size: 1.08rem;
+                font-weight: 600;
+                border-radius: 7px;
+                background: #0098e3;
+                color: #fff;
+              "
+            >
+              Log in
+            </button>
+            <p style="text-align: center; font-size: 1rem; margin: 0">
+              Don't have an account?
+              <a
+                href="#"
+                id="show-signup"
+                style="color: #0098e3; font-weight: 500"
+                >Sign up</a
+              >
+            </p>
+          </form>
+          <form id="signup-form" style="display: none; transition: all 0.2s">
+            <div style="margin-bottom: 18px">
+              <label
+                for="signup-email"
+                style="
+                  font-weight: 500;
+                  color: #333;
+                  display: block;
+                  margin-bottom: 6px;
+                "
+              >
+                Email
+              </label>
+              <input
+                type="email"
+                id="signup-email"
+                placeholder="Email"
+                class="form-search"
+                required
+                style="
+                  width: 100%;
+                  padding: 12px 14px;
+                  border: 1.5px solid #e0e6ed;
+                  border-radius: 7px;
+                  font-size: 1rem;
+                  outline: none;
+                  transition: border 0.2s;
+                "
+              />
+            </div>
+            <div style="margin-bottom: 18px">
+              <label
+                for="signup-password"
+                style="
+                  font-weight: 500;
+                  color: #333;
+                  display: block;
+                  margin-bottom: 6px;
+                "
+              >
+                Password
+              </label>
+              <input
+                type="password"
+                id="signup-password"
+                placeholder="Password"
+                class="form-search"
+                required
+                style="
+                  width: 100%;
+                  padding: 12px 14px;
+                  border: 1.5px solid #e0e6ed;
+                  border-radius: 7px;
+                  font-size: 1rem;
+                  outline: none;
+                  transition: border 0.2s;
+                "
+              />
+            </div>
+            <div style="margin-bottom: 18px">
+              <label
+                for="signup-name"
+                style="
+                  font-weight: 500;
+                  color: #333;
+                  display: block;
+                  margin-bottom: 6px;
+                "
+              >
+                Full Name
+              </label>
+              <input
+                type="text"
+                id="signup-name"
+                placeholder="Full Name"
+                class="form-search"
+                required
+                style="
+                  width: 100%;
+                  padding: 12px 14px;
+                  border: 1.5px solid #e0e6ed;
+                  border-radius: 7px;
+                  font-size: 1rem;
+                  outline: none;
+                  transition: border 0.2s;
+                "
+              />
+            </div>
+            <button
+              type="submit"
+              class="button"
+              style="
+                width: 100%;
+                margin-bottom: 16px;
+                padding: 12px 0;
+                font-size: 1.08rem;
+                font-weight: 600;
+                border-radius: 7px;
+                background: #0098e3;
+                color: #fff;
+              "
+            >
+              Sign up
+            </button>
+            <p style="text-align: center; font-size: 1rem; margin: 0">
+              Already have an account?
+              <a
+                href="#"
+                id="show-login"
+                style="color: #0098e3; font-weight: 500"
+                >Log in</a
+              >
+            </p>
+          </form>
+          <div
+            id="auth-error"
+            style="
+              color: #c00;
+              text-align: center;
+              margin-top: 16px;
+              font-size: 1.05rem;
+            "
+          ></div>
+        </div>
+        <!-- Modal overlay for email confirmation -->
+        <div
+          id="email-confirm-modal"
+          style="
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background: rgba(0, 0, 0, 0.45);
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <div
+            style="
+              background: #fff;
+              padding: 36px 32px 28px 32px;
+              border-radius: 14px;
+              max-width: 350px;
+              width: 90vw;
+              box-shadow: 0 8px 32px rgba(0, 0, 0, 0.13);
+              text-align: center;
+            "
+          >
+            <img
+              src="/themes/custom/themekit/images/Cue.png"
+              alt="CueBetween Logo"
+              style="height: 40px; width: auto; margin-bottom: 18px"
+            />
+            <h3
+              style="
+                margin: 0 0 12px 0;
+                font-size: 1.3rem;
+                font-weight: 600;
+                color: #222;
+              "
+            >
+              Confirm your email
+            </h3>
+            <p style="color: #444; font-size: 1.05rem; margin-bottom: 18px">
+              A confirmation link has been sent to your email. Please check your
+              inbox and click the link to activate your account.
+            </p>
+            <button
+              id="close-modal"
+              class="button"
+              style="
+                background: #0098e3;
+                color: #fff;
+                padding: 10px 0;
+                width: 100%;
+                border-radius: 7px;
+                font-size: 1rem;
+                font-weight: 600;
+              "
+            >
+              OK
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script type="module">
+      import { supabase, loginAndRedirect } from "./config/supabase.js";
+      const loginForm = document.getElementById("login-form");
+      const signupForm = document.getElementById("signup-form");
+      const showSignup = document.getElementById("show-signup");
+      const showLogin = document.getElementById("show-login");
+      const authError = document.getElementById("auth-error");
+      const emailConfirmModal = document.getElementById("email-confirm-modal");
+      const closeModal = document.getElementById("close-modal");
+
+      loginForm.onsubmit = async (e) => {
+        e.preventDefault();
+        authError.textContent = "";
+        const email = document.getElementById("login-email").value;
+        const password = document.getElementById("login-password").value;
+        try {
+          await loginAndRedirect(email, password);
+        } catch (err) {
+          authError.textContent = err.message || "Login failed.";
+        }
+      };
+
+      signupForm.onsubmit = async (e) => {
+        e.preventDefault();
+        authError.textContent = "";
+        const email = document.getElementById("signup-email").value;
+        const password = document.getElementById("signup-password").value;
+        const name = document.getElementById("signup-name").value;
+        const { data, error } = await supabase.auth.signUp({ email, password });
+        if (error) {
+          authError.textContent = error.message || "Signup failed.";
+          return;
+        }
+        // Show modal overlay
+        emailConfirmModal.style.display = "flex";
+        // Update profile with name (will only work after email is confirmed)
+        // await supabase.from("profiles").update({ name }).eq("id", data.user.id);
+      };
+
+      closeModal.onclick = () => {
+        emailConfirmModal.style.display = "none";
+      };
+
+      showSignup.onclick = (e) => {
+        e.preventDefault();
+        loginForm.style.display = "none";
+        signupForm.style.display = "block";
+        authError.textContent = "";
+      };
+      showLogin.onclick = (e) => {
+        e.preventDefault();
+        signupForm.style.display = "none";
+        loginForm.style.display = "block";
+        authError.textContent = "";
+      };
+
+      // On page load, check if user is confirmed and redirect
+      (async () => {
+        const {
+          data: { user },
+        } = await supabase.auth.getUser();
+        if (user && user.email_confirmed_at) {
+          window.location.href = "/dashboard.html";
+        }
+      })();
+    </script>
+  </body>
+</html>
